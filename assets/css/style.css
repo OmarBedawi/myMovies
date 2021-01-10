@@ -7,13 +7,20 @@ body{
   padding: 0;
   font-family: "Balsamic", sans-serif;
   background: url("../pictures/backgroundpic.jpg");
+/*  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
 }
 
+/*.background{
+    background-repeat: repeat;
+    background-position: left;
+    background-size: auto;
+}*/
 
 /*------------------------------------------------------------header and nav*/
 
 header {
-    position: fixed;
     top: 0;
     left: 0;
     padding: 0 100px;
@@ -61,7 +68,9 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-
+nav ul li .line{
+    text-decoration: underline;
+}
 
 .menu-toggle {
     color: #fff;
@@ -77,10 +86,16 @@ header nav ul li a:hover {
 
 .searchMovies{
     margin: auto;
-    margin-top: 300px;
+    margin-top: 100px;
+    
     width: 60%;
     height: 400%;
 }
+
+.inner{
+    margin-bottom: 245px;
+}
+
 
 .form-control{
     height: 50px;
@@ -93,12 +108,12 @@ header nav ul li a:hover {
     height: 50px;
     background-color: rgb(70, 231, 6);
 }
+
+
 /*--------------------------------------------------------------------footer*/
 
 footer {
     height: 200px;
-    
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -122,4 +137,201 @@ footer {
 .socialnet :hover {
     color: rgb(70, 231, 6);
     text-decoration: transparent;
+}
+
+
+/*------------------------------------------------------------Top Rated Page*/
+
+
+
+
+.container{
+    margin-bottom: 200px;
+    
+}
+
+
+.container h2{
+    text-align: center;
+    text-transform: none;
+    font-size: 80px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: #fff;
+    
+}
+
+
+.container h5{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+a:hover{
+    text-decoration: none;
+}
+
+.rating{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: yellow;
+    border: 1px solid black;
+    margin-bottom: 0;
+}
+
+.card-body{
+    background-color: rgb(218, 216, 216);
+    text-align: center;
+}
+
+.card img{
+    height: 200px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------Sequels Page*/
+
+
+
+.box-sequel1{
+     height: 50px;
+     width: 500px;
+     background-color: rgb(70, 231, 6);
+     color: #fff;
+     text-align: center;
+     text-transform: capitalize;
+     margin: auto;
+     margin-top: 110px;
+     margin-bottom: 110px;
+}
+
+
+.box-sequel1 h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.box-out i{
+    margin-left: 40px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+.box-sequel2{
+     height: 50px;
+     width: 500px;
+     background-color: rgb(70, 231, 6);
+     color: #fff;
+     text-align: center;
+     margin: auto;
+     margin-top: 110px;
+     margin-bottom: 110px;
+}
+
+
+.box-sequel2 h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: auto;
+}
+
+
+
+/*--------------------------------------------------------------------------*/
+
+
+.box-sequel3{
+    height: 50px;
+    width: 500px;
+    background-color: rgb(70, 231, 6);
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 110px;
+}
+
+.box-sequel3 h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+/*-------------------------------------------------------------About us Page*/
+
+/* Carousel */
+
+/*
+.slider .container img{
+   width: 100%;
+   height: 420px;
+}
+*/
+.slider {
+	background-color: #f7f7f7;
+	position: relative;
+	width: 40%;
+	height: 420px;
+	border-bottom: 10px solid #f7f7f7;
+    border-top: 10px solid #f7f7f7;
+    margin: auto;
+}
+
+.slide {
+	text-align: center;
+	background: #f7f7f7;
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.active-slide {
+    display: block;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #363636;
 }
