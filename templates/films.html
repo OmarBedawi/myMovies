@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskManager</title>
+</head>
+<body>
+
+    {% for task in films %}
+        {{ task.title }}<br>
+        {{ task.genre }}<br>
+        {{ task.year }}<br>
+        {{ task.runtime_min }}<br>
+        {{ task.directors }}<br>
+        {{ task.imdb_rating }}<br>
+        {{ task.tiffany_id }}<br>
+    {% endfor %}
+    
+</body>
+</html>
