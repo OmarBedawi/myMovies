@@ -1,31 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 
-    
-
-    {% for task in films %}
-        {{ task.title }}<br>
-        {{ task.genre }}<br>
-        {{ task.year }}<br>
-        {{ task.runtime_min }}<br>
-        {{ task.directors }}<br>
-        {{ task.imdb_rating }}<br>
-        {{ task.tiffany_id }}<br>
-    {% endfor %}
-
-<ul class="collapsible">
+    <ul class="collapsible">
+        {% for task in films %}
         <li>
-            <div class="collapsible-header white-text light-blue darken-4 text-shadow"><i class="fas fa-caret-down"></i>First</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="collapsible-header white-text light-blue darken-4 text-shadow">
+                <i class="fas fa-caret-down"></i>
+                <strong>{{ task.title }}</strong> &nbsp;  -  {{ task.year }}  -  {{ task.imdb_rating }}
+                
+            </div>
+            <div class="collapsible-body">
+                <strong>{{ task.directors }}</strong>
+                <p>{{ task.genre }}</p>
+                <p>{{ task.runtime_min }}</p>
+                <p>{{ task.tiffany_id }}</p>
+            </div>
         </li>
-        <li>
-            <div class="collapsible-header white-text light-blue darken-4 text-shadow"><i class="fas fa-caret-down"></i>Second</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header white-text light-blue darken-4 text-shadow"><i class="fas fa-caret-down"></i>Third</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
+        {% endfor %}
     </ul>
-    
+
 {% endblock %}
