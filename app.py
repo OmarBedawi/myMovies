@@ -99,6 +99,24 @@ def logout():
     return redirect(url_for("login"))
 
 
+@app.route("/add_task", methods=["GET", "POST"])
+def add_task():
+    if request.method == "POST":
+        task = {
+            "title": request.form.get("title"),
+            "genre": request.form.get("genre"),
+            "imdb_rating": request.form.get("imdb_rating"),
+            "directors": request.form.get("directors"),
+            "year": request.form.get("year"),
+            "runtime_min": request.form.get("runtime_min"),
+            "created_by": session["user"]
+        }
+        mongo.db.films.insert_one(task)
+        flash("Film Successfully Added")
+        return redirect(url_for("get_films"))
+    return render_template("add_task.html")
+    
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

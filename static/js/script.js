@@ -5,6 +5,14 @@
 $(document).ready(function () {
     $(".sidenav").sidenav({edge: "right"});
     $(".collapsible").collapsible();
+    $(".datepicker").datepicker({
+        format: "mmmm, yyyy",
+        yearRange: 100,
+        showClearBtn: true,
+        i18n: {
+            done: "Select"
+        }
+    });
 });
 
 
