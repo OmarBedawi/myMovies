@@ -115,7 +115,27 @@ def add_task():
         flash("Film Successfully Added")
         return redirect(url_for("get_films"))
     return render_template("add_task.html")
-    
+
+
+@app.route("/edit_task/<task_id>", methods=["GET", "POST"])
+def edit_task(task_id):
+    if request.method == "POST":
+        submit = {
+            "title": request.form.get("title"),
+            "genre": request.form.get("genre"),
+            "imdb_rating": request.form.get("imdb_rating"),
+            "directors": request.form.get("directors"),
+            "year": request.form.get("year"),
+            "runtime_min": request.form.get("runtime_min"),
+            "created_by": session["user"]
+        }
+        mongo.db.films.update({"_id": ObjectId(task_id)}, submit)
+        flash("Film Successfully Updated")
+        
+    task = mongo.db.films.find_one({"_id": ObjectId(task_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_task.html", task=task, categories=categories)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
