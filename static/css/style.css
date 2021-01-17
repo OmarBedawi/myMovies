@@ -16,3 +16,32 @@
     line-height: 42px;
 }
 
+
+body{
+    margin-bottom: 50px;
+    background-image: url("../picturesc/backgroundpic.jpg"); 
+}
+
+.collapsible_background{
+    background-color: azure;
+}
+
+
+.center-align{
+    color: white;
+    font-weight: 600;
+    
+}
+
+
+.brand-logo{
+    margin-left: 10px;
+    
+    
+}
+
+
+.butt_film{
+    margin-left: auto;
+    margin-right: 0;
+}

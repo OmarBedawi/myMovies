@@ -106,45 +106,48 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_film", methods=["GET", "POST"])
-def add_film():
+@app.route("/add_task", methods=["GET", "POST"])
+def add_task():
     if request.method == "POST":
-        film = {
+        task = {
             "title": request.form.get("title"),
             "genre": request.form.get("genre"),
+            "imdb_rating": request.form.get("imdb_rating"),
+            "directors": request.form.get("directors"),
             "year": request.form.get("year"),
-            "tiffany_id": request.form.get("tiffany_id"),
+            "runtime_min": request.form.get("runtime_min"),
             "created_by": session["user"]
         }
-        mongo.db.films.insert_one(film)
+        mongo.db.films.insert_one(task)
         flash("Film Successfully Added")
         return redirect(url_for("get_films"))
-    return render_template("add_film.html")
+    return render_template("add_task.html")
 
 
-@app.route("/edit_film/<film_id>", methods=["GET", "POST"])
-def edit_film(film_id):
+@app.route("/edit_task/<task_id>", methods=["GET", "POST"])
+def edit_task(task_id):
     if request.method == "POST":
         submit = {
             "title": request.form.get("title"),
             "genre": request.form.get("genre"),
+            "imdb_rating": request.form.get("imdb_rating"),
+            "directors": request.form.get("directors"),
             "year": request.form.get("year"),
-            "tiffany_id": request.form.get("tiffany_id"),
+            "runtime_min": request.form.get("runtime_min"),
             "created_by": session["user"]
         }
-        mongo.db.films.update({"_id": ObjectId(film_id)}, submit)
+        mongo.db.films.update({"_id": ObjectId(task_id)}, submit)
         flash("Film Successfully Updated")
-        return redirect(url_for("get_films"))
         
-    film = mongo.db.films.find_one({"_id": ObjectId(film_id)})
+    task = mongo.db.films.find_one({"_id": ObjectId(task_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_film.html", film=film, categories=categories)
-    
+    return render_template("edit_task.html", task=task, categories=categories)
 
-@app.route("/delete_film/<film_id>")
-def delete_film(film_id):
-    mongo.db.films.remove({"_id": ObjectId(film_id)})
-    flash("Film Successfully Deleted")
+
+@app.route("/delete_task/<task_id>")
+def delete_task(task_id):
+    mongo.db.films.remove({"_id": ObjectId(task_id)})
+    flash("Task Successfully Deleted")
     return redirect(url_for("get_films"))
 
 
