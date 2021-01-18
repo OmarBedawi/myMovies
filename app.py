@@ -114,6 +114,7 @@ def add_film():
             "genre": request.form.get("genre"),
             "year": request.form.get("year"),
             "tiffany_id": request.form.get("tiffany_id"),
+            "wiki": request.form.get("wiki"),
             "created_by": session["user"]
         }
         mongo.db.films.insert_one(film)
@@ -130,6 +131,7 @@ def edit_film(film_id):
             "genre": request.form.get("genre"),
             "year": request.form.get("year"),
             "tiffany_id": request.form.get("tiffany_id"),
+            "wiki": request.form.get("wiki"),
             "created_by": session["user"]
         }
         mongo.db.films.update({"_id": ObjectId(film_id)}, submit)
