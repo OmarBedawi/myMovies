@@ -10,7 +10,7 @@
                     <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
                     <input id="title" name="title" minlength="2" maxlength="100"
                         type="text" class="validate" required>
-                    <label for="title">Title</label>
+                    <label for="title">Title <span class="required">*</span></label>
                 </div>
             </div>
 
@@ -20,7 +20,7 @@
                     <i class="far fa-list-alt prefix light-blue-text text-darken-4"></i>
                     <input id="genre" name="genre" minlength="2" maxlength="100"
                         type="text" class="validate" required>
-                    <label for="genre">Genre</label>
+                    <label for="genre">Genre <span class="required">*</span></label>
                 </div>
             </div>
       
@@ -29,8 +29,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                    <input id="year" name="year" type="text" class="datepicker validate" required>
-                    <label for="year">Year</label>
+                    <input id="year" name="year" type="text" minlength="4" maxlength="4" placeholder="yyyy" required>
+                    <label for="year">Year <span class="required">*</span></label>
                 </div>
             </div>
 
@@ -43,21 +43,23 @@
                     <i class="fas fa-bars prefix light-blue-text text-darken-4"></i>
                     <textarea id="tiffany_id" name="tiffany_id" minlength="1"
                         maxlength="10" class="materialize-textarea validate" required></textarea>
-                    <label for="tiffany_id">Tiffany ID</label>
+                    <label for="tiffany_id">Tiffany ID <span class="required">*</span></label>
                 </div>
             </div>
             
 
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-bars prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-external-link-alt prefix light-blue-text text-darken-4"></i>
                     <textarea id="wiki" name="wiki" minlength="1"
                         maxlength="200" class="materialize-textarea validate"></textarea>
-                    <label for="wiki">Wikipedia Page</label>
+                    <label for="wiki">Wikipedia Link</label>
                 </div>
             </div>
 
-            
+<p>
+    <span class="required">*</span>Required field
+</p>             
             <!-- submit button -->
             <div class="row">
                 <div class="col s12 center-align">
