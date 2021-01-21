@@ -1,4 +1,4 @@
-![screens](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/picturesc/readMe_files/tiff_movies.png?raw=true)
+![screens](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/tiff_responsive.png?raw=true)
 
 # Tiffany's Films Archive
 
