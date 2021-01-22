@@ -4,7 +4,7 @@
 
 This is the source code of the Tiffany's Films Archive. 
 
-To see it in action just click this [link](https://omarbedawi.github.io/PizzeriaVecchiaMilano/).
+To see it in action just click this [link](http://my-first-heroku-for-movies.herokuapp.com/get_films).
 
 
 ## Goals
