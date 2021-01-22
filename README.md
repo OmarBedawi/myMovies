@@ -33,15 +33,22 @@ The goal of this website is to easily display the user's collection and facilita
 
 ## Installation
 
-In the head of the project I have installed the links to have access to different libraries. In the picture are wrapped in red.
-![head](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/1header.png?raw=true)
+In the head of the project I have installed the links to have access to different libraries. In the picture, the links are wrapped in red.
 
 1. Materialize: a library with templates for buttons, forms, sidenav and so many other components. For this project for example I used it to build the navigation bar, the search bar and the buttons.
 1. Font Awesome: is an icon library. 
-1. Cdnjs is a Javascript library and below the external link to the style.css file.
-1. In the <head> of the orderonline page there is the link to connect to the sendEmailJs service.
-  This service, every time an order is sent, make sure to send an email with the order to the pizzeria, and a confirmation email to the customer.
-1. At the bottom of the page is where the javascript files are located. In every page html page for example there is the <script> to make the navbar responsive for every screen size. 
+1. Cdnjs is a is an ultra-fast, reliable, globally available content delivery network for open-source libraries.
+1. The last link below is showing where the style.css file is located.
+
+This project has been built using jinja template engine. 
+Jinja allows us to write an html code and be able to reproduce that code in all the other html page where we want to use it again.
+Jinja is very useful for header, navbar and footers because I don't have to code them again.
+The jinja parenthesis are wrapped in blue lines in the picture.
+
+![header](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/1_header.png?raw=true)
+  
+  
+1. At the bottom of the page are located scripts and javascript file. 
   
 ![javascript](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/2javascript_bottom.png?raw=true)
 
