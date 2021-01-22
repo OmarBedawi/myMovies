@@ -22,14 +22,19 @@ mongo = PyMongo(app)
 @app.route("/get_films")
 def get_films():
     films = list(mongo.db.films.find().sort("title"))
-    return render_template("films.html", films=films)
+    for film in films:
+        try: 
+            film['created_by'] = mongo.db.users.find_one({'_id': ObjectId(film['created_by'])})['username']
+        except:
+            pass
+    return render_template("index.html", films=films)
 
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
     films = list(mongo.db.films.find({"$text": {"$search": query}}))
-    return render_template("films.html", films=films)    
+    return render_template("index.html", films=films)    
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -109,13 +114,14 @@ def logout():
 @app.route("/add_film", methods=["GET", "POST"])
 def add_film():
     if request.method == "POST":
+        user = mongo.db.users.find_one({"username": session['user']})
         film = {
             "title": request.form.get("title"),
             "genre": request.form.get("genre"),
             "year": request.form.get("year"),
             "tiffany_id": request.form.get("tiffany_id"),
             "wiki": request.form.get("wiki"),
-            "created_by": session["user"]
+            "created_by": ObjectId(user['_id'])
         }
         mongo.db.films.insert_one(film)
         flash("Film Successfully Added")
@@ -126,13 +132,14 @@ def add_film():
 @app.route("/edit_film/<film_id>", methods=["GET", "POST"])
 def edit_film(film_id):
     if request.method == "POST":
+        user = mongo.db.users.find_one({"username": session['user']})
         submit = {
             "title": request.form.get("title"),
             "genre": request.form.get("genre"),
             "year": request.form.get("year"),
             "tiffany_id": request.form.get("tiffany_id"),
             "wiki": request.form.get("wiki"),
-            "created_by": session["user"]
+            "created_by": ObjectId(user['_id'])
         }
         mongo.db.films.update({"_id": ObjectId(film_id)}, submit)
         flash("Film Successfully Updated")

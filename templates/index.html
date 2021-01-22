@@ -2,7 +2,9 @@
 {% block content %}
     
     <h3 class="white-text text-darken-4 center-align"><strong>All Films</strong></h3>
-    
+
+<!-- search bar -->
+
     <div class="row card-panel grey lighten-5">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
@@ -11,6 +13,9 @@
                     <input type="text" name="query" id="query" minlength="2" class="validate" required>
                     <label for="query">Search Film</label>
                 </div>
+
+<!-- search and reset buttons-->
+
                 <div class="col s12 m4" id="button_row">
                     <a href="{{ url_for('get_films') }}" class="red btn text-shadow">Reset</a>
                     <button type="submit" class="light-blue darken-1 btn text-shadow">
@@ -21,7 +26,8 @@
         </form>
     </div>
 
-    
+<!-- films are listed in collapsible to hide contents that are not immediately relevant-->
+
     {% if films|length > 0 %}
     <ul class="collapsible collapsible_background">
         {% for film in films %}
@@ -43,6 +49,9 @@
                     {% endif %}
                 </div>
             </div>
+
+<!-- expandable area-->
+
             <div class="collapsible-body">
                 <strong>Genre: {{ film.genre }}</strong>
                 <p>Year: {{ film.year }}</p>

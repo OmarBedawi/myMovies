@@ -14,11 +14,14 @@
 <body>
 
 <header>
-        <!-- top navbar -->
-        <div class="navbar-fixed">  
+
+
+<!-- top navbar -->
+
+    <div class="navbar-fixed">  
 		<nav class="nav-extended text-shadow light-blue darken-1">
 			<div class="nav-wrapper">
-				<a href="{{ url_for('get_films') }}" class="brand-logo left">Tiffany's Films</a>
+				<a href="{{ url_for('get_films') }}" class="brand-logo">Tiffany's Films</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="{{ url_for('get_films') }}">Home</a></li>
@@ -35,11 +38,12 @@
 				</ul>
 			</div>
 		</nav>
-        </div>
+    </div>
 
 
     
-        <!-- mobile sidenav -->
+<!-- mobile sidenav -->
+
 		<ul class="sidenav" id="mobile-demo">
             <li><h4 class="center-align light-blue-text text-darken 4">Tiffany's Films</h4></li>
             <li><a href="{{ url_for('get_films') }}">Home</a></li>
@@ -57,7 +61,9 @@
 </header>
  
    <section>
-        <!-- flash messages -->
+
+<!-- flash messages -->
+
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}

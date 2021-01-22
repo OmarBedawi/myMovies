@@ -1,3 +1,12 @@
+body{
+    margin-bottom: 50px;
+    background-image: url("../images/background/backgroundpic.jpg"); 
+}
+
+
+/*---------------------------------------------------------header and navbar*/
+
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -6,10 +15,20 @@
     line-height: 2;
 }
 
+
+.brand-logo{
+    margin-left: 10px;
+}
+
+
+/*--------------------------------------------------------------- index page*/
+
 .btn-small{
     margin: 5px;
     
 }
+
+
 
 .collapsible-header .col strong {
     margin: 5px;
@@ -17,14 +36,18 @@
 }
 
 
-body{
-    margin-bottom: 50px;
-    background-image: url("../images/background/backgroundpic.jpg"); 
-}
+
 
 .collapsible_background{
     background-color: azure;
 }
+
+
+.butt_film{
+    margin-left: auto;
+    margin-right: 0;
+}
+
 
 
 .center-align{
@@ -34,22 +57,24 @@ body{
 }
 
 
-.brand-logo{
-    margin-left: 10px;
-    
-    
-}
 
+/*-------------------------------------------------------------add film page*/
 
 
 .required{
     color: red;
 }
 
-.butt_film{
-    margin-left: auto;
-    margin-right: 0;
+
+/*--------------------------------------------------------------profile page*/
+
+
+.profile_card{
+    margin-top: 70px;
 }
+
+
+/*-----------------------------------------------------------smaller screens*/
 
 
 @media (max-width: 576px) {
