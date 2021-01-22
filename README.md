@@ -10,34 +10,33 @@ To see it in action just click this [link](https://omarbedawi.github.io/Pizzeria
 ## Goals
 ### Tiffany's Films Archive goals
 
-The goal of this website is to easily display the user's collection and facilitate her to add, edit and delete movies.
+The goal of this website is to easily display the user's collection and facilitate her to add, edit and delete films from the list in the home page.
 
 ### Target audience is:
 
-* A good friend of mine who was looking for an application to storage and have access to her movies collection.
+* A films collector who was looking for an application to storage and have fast and easy access to its films informations.
 
 
 ### Business goals
 
-To have as many of the attendees of the Pizzeria, as possible, take up usage of the web app.
-Interactive web-app.
-Fully functional web app.
-Intuitive design.
-Easy to navigate.
+* Interactive web-app
+* Fully functional web app
+* Intuitive design
+* Easy to navigate
 
 
 ### Customer goals
 
-* Have a easy.
-* Find easy to place an order on line for the home delivery or the take away.
+* Find easy to access the collection and localize the desired films, typing in the search bar the film title or only one word of it. 
+* Find easy to add a new film to the collection and eventually modify its information or delete the title from the collecion .
 
 
 ## Installation
 
-In the head of the project I have installed the links to have access to different libraries. 
-![head](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/1head&mail.png?raw=true)
+In the head of the project I have installed the links to have access to different libraries. In the picture are wrapped in red.
+![head](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/1.header.png?raw=true)
 
-1. Bootstap 4: a library with templates for buttons, forms, jumbotrons and so many other components. For this project for example I used it to build the responsive navigation bar and the green button on the navabar.
+1. Materialize: a library with templates for buttons, forms, sidenav and so many other components. For this project for example I used it to build the navigation bar, the search bar and the buttons.
 1. Font Awesome: is an icon library. 
 1. Cdnjs is a Javascript library and below the external link to the style.css file.
 1. In the <head> of the orderonline page there is the link to connect to the sendEmailJs service.
