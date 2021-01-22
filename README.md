@@ -34,7 +34,7 @@ The goal of this website is to easily display the user's collection and facilita
 ## Installation
 
 In the head of the project I have installed the links to have access to different libraries. In the picture are wrapped in red.
-![head](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/1.header.png?raw=true)
+![head](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/1header.png?raw=true)
 
 1. Materialize: a library with templates for buttons, forms, sidenav and so many other components. For this project for example I used it to build the navigation bar, the search bar and the buttons.
 1. Font Awesome: is an icon library. 
