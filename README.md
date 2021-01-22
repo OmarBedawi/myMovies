@@ -50,8 +50,7 @@ The jinja parenthesis are wrapped in blue lines in the picture.
   
 1. At the bottom of the page are located scripts and javascript file. 
   
-![javascript](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/2javascript_bottom.png?raw=true)
-
+![scripts](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/2_scripts.png?raw=true)
 
 
 ## User Stories
