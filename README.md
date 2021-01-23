@@ -87,15 +87,9 @@ This make any future correction or research much easier.
 
 ### WIREFRAMES
 
-I built the wireframes using the [Balsamiq Cloud](https://balsamiq.cloud/) service.
 
-Testing information can be found [here](static/readMe_files/wireframes/wireframe.md).
+Wireframes information can be found [here](static/readMe_files/wireframes/wireframe.md).
 
-![home](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/wireframes/1homepage.png?raw=true)
-![menu](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/wireframes/2menu.png?raw=true)
-![story](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/wireframes/3ourstory.png?raw=true)
-![gallery](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/wireframes/4gallery.png?raw=true)
-![order](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/wireframes/5orderon-line.png?raw=true)
 
 
 
