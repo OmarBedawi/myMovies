@@ -121,7 +121,7 @@ def add_film():
             "year": request.form.get("year"),
             "tiffany_id": request.form.get("tiffany_id"),
             "wiki": request.form.get("wiki"),
-            "created_by": ObjectId(user['_id'])
+            "created_by": ObjectId(user["_id"])
         }
         mongo.db.films.insert_one(film)
         flash("Film Successfully Added")
