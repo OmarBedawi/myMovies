@@ -1,7 +1,9 @@
-
-![screens](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/tiff_responsive.png?raw=true)
-
 # Tiffany's Films Archive
+
+
+![screens](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/tiff_responsive.png?raw=true)
+
+
 
 This is the source code of the Tiffany's Films Archive. 
 
@@ -46,12 +48,12 @@ Jinja allows us to write an html code and be able to reproduce that code in all 
 Jinja is very useful for header, navbar and footers because I don't have to code them again.
 The jinja parenthesis are wrapped in blue lines in the picture.
 
-![header](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/1_header.png?raw=true)
+![header](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/1_header.png?raw=true)
   
   
 * Scripts and JavaScript files are located at the end of the page to be loaded for last.
   
-![scripts](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/2_scripts.png?raw=true)
+![scripts](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/2_scripts.png?raw=true)
 
 
 ## User Stories
