@@ -6,7 +6,7 @@
 
 I built the wireframes using the [Balsamiq Cloud](https://balsamiq.cloud/) service.
 
-Here below are the screenshots of my wireframes are displayed.
+Here below the screenshots of my wireframes are displayed.
 
 
 ![wire1](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/wireframes/1_wire.png?raw=true)
