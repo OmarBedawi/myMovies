@@ -58,6 +58,11 @@ The jinja parenthesis are wrapped in blue lines in the picture.
 
 ## User Stories
 
+I built this website using the Materialize library.
+All the componenets I used like the top NavBar, the side Bar, forms, buttons, collapsibles come from that library that is very helpful with the responsivity on every screen size.
+
+
+
 I built a responsive navbar, that shows a toggle menu when the screen size is below 991px. 
 To build it I followed an accurate and guided tutorial that you can find at this [link](https://youtu.be/gt8zOLQ8A0w)
 
