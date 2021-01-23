@@ -1,3 +1,4 @@
+
 ![screens](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/tiff_responsive.png?raw=true)
 
 # Tiffany's Films Archive
@@ -10,7 +11,7 @@ To see it in action just click this [link](http://my-first-heroku-for-movies.her
 ## Goals
 ### Tiffany's Films Archive goals
 
-The goal of this website is to easily display the user's collection and facilitate her to add, edit and delete films from the list in the home page.
+The goal of this website is to easily display the collection and facilitate the user to add, edit and delete films from the collection in the home page.
 
 ### Target audience is:
 
@@ -48,7 +49,7 @@ The jinja parenthesis are wrapped in blue lines in the picture.
 ![header](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/1_header.png?raw=true)
   
   
-1. At the bottom of the page are located scripts and javascript file. 
+* Scripts and JavaScript files are located at the end of the page to be loaded for last.
   
 ![scripts](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/images/readMe_files/2_scripts.png?raw=true)
 
