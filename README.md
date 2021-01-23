@@ -142,6 +142,8 @@ This project makes use of:
 
 ## Testing
 
+Testing information can be found [here](static/readMe_files/testing/testing.md).
+
 Navbar:
 1. Go to any html page.
 1. Try to reduce the screen size to any size below 991px and verify that a toggle menu appears on the top right angle of the screen.
