@@ -38,7 +38,8 @@ The goal of this website is to easily display the collection and facilitate the 
 
 In the head of the project I have installed the links to have access to different libraries. In the picture, the links are wrapped in red.
 
-1. Materialize: a library with templates for buttons, forms, sidenav and so many other components. For this project for example I used it to build the navigation bar, the search bar and the buttons.
+1. Materialize: a library with templates for buttons, forms, sidenav and so many other components. For this project for example I used it to build the navigation bar, the 
+search bar and the buttons.
 1. Font Awesome: is an icon library. 
 1. Cdnjs is a is an ultra-fast, reliable, globally available content delivery network for open-source libraries.
 1. The last link below is showing where the style.css file is located.
@@ -108,7 +109,7 @@ The "profile" page is telling you which profile is logged in.
 All the films and the relative informations in the homepage are stored in a database called Mongo DB, and thanks to Flask and Python I have been able to import and connect
 them all to my Github repository and create the desired functions inside the app.py file.
 
-The CSS file is divided by comments, that I used as title to separate the html pages or the screen size secions. 
+The CSS file is divided by comments, that I used as title to separate the html pages or the screen size sections. 
 This make any future correction or class/id research much easier.
 
 
@@ -135,7 +136,7 @@ This project makes use of:
 * [HTML] - base language for this project.
 * [CSS] - Used for Styling the HTML code
 * [JavaScript] - Used to make the web app interactive.
-* [Python] -
+* [Python] - Used to 
 * [Mongo DB] -
 * [Flask] -
 * [Heroku] - 
@@ -168,7 +169,7 @@ This project makes use of:
 * [PageSpeed insights](https://developers.google.com/speed/pagespeed/insights/) - Used for testing the loading speed of the site.
 
 
-![speedtest](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/speedtest.png?raw=true)
+![speedtest](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/speed_test.png?raw=true)
 ###### A caption of a speed test on PageSpeed insights.
 
 ## Testing
