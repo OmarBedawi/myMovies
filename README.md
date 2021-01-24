@@ -36,7 +36,9 @@ The goal of this website is to easily display the collection and facilitate the 
 
 ## Installation
 
-In the head of the project I have installed the links to have access to different libraries. In the picture, the links are wrapped in red.
+In the head of the project I have installed the links to have access to different libraries. 
+
+In the picture, the links are wrapped in red.
 
 1. Font Awesome: is an icon library. 
 1. Materialize: a library with templates for buttons, forms, sidenav and so many other components. For this project for example I used it to build the navigation bar, 
@@ -61,13 +63,17 @@ The jinja parenthesis are wrapped in blue lines in the picture below.
 I built this website using the Materialize library.
 All the componenets I used like the top NavBar, the side Bar, forms, buttons, collapsibles come from that library that is very helpful to provide you very responsive components.
 
-The homepage is where the list of films are located, because the user wish to have a direct access to the collection when she start the application.
+The homepage is where the list of films are located, because the user wish to have a direct access to the collection when she starts the application.
 
 Above the collection there is a search bar to locate the desire film among a list of more than 500 films.
-Every film is stored and displayed in a collapsible that showing only the film title, but when you click on it, the collapsible it expands his area and showing the information
+
+Every film is stored and displayed in a collapsible that shows only the film title, but when you click on it, the collapsible expands his area and shows the informations
 that the user needs.
+
 The buttons "delete" and "edit" next to the film title are available only for the users who have added that specific film.
+
 In case of films added by other users the "delete" and "edit" buttons are not displayed.
+
 In the expandable area you can find informations as the genre of the film, the year, the ID of the user, a wikipedia link and the username of who has added the film.
 
 foto collezione
