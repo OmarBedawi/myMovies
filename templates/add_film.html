@@ -1,78 +1,63 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <h3 class="white-text text-darken-4 center-align"><strong>Add Film</strong></h3>
-
-    <div class="row card-panel grey lighten-5">
-        <form class="col s12" method="POST" action="{{ url_for('add_film') }}">
-            
-<!-- title label-->            
-            
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                    <input id="title" name="title" minlength="2" maxlength="100"
-                        type="text" class="validate" required>
-                    <label for="title">Title <span class="required">*</span></label>
-                </div>
+<h3 class="white-text text-darken-4 center-align"><strong>Add Film</strong></h3>
+<div class="row card-panel grey lighten-5">
+    <form class="col s12" method="POST" action="{{ url_for('add_film') }}">
+        <!-- title label-->            
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                <input id="title" name="title" minlength="2" maxlength="100"
+                    type="text" class="validate" required>
+                <label for="title">Title <span class="required">*</span></label>
             </div>
-
-<!-- genre label-->
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="far fa-list-alt prefix light-blue-text text-darken-4"></i>
-                    <input id="genre" name="genre" minlength="2" maxlength="100"
-                        type="text" class="validate" required>
-                    <label for="genre">Genre <span class="required">*</span></label>
-                </div>
+        </div>
+        <!-- genre label-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="far fa-list-alt prefix light-blue-text text-darken-4"></i>
+                <input id="genre" name="genre" minlength="2" maxlength="100"
+                    type="text" class="validate" required>
+                <label for="genre">Genre <span class="required">*</span></label>
             </div>
-      
-<!-- year label-->
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                    <input id="year" name="year" type="text" minlength="4" maxlength="4" placeholder="yyyy" required>
-                    <label for="year">Year <span class="required">*</span></label>
-                </div>
+        </div>
+        <!-- year label-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+                <input id="year" name="year" type="text" minlength="4" maxlength="4" placeholder="yyyy" required>
+                <label for="year">Year <span class="required">*</span></label>
             </div>
-
-<!-- Tiffany ID label-->
-            
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-bars prefix light-blue-text text-darken-4"></i>
-                    <textarea id="tiffany_id" name="tiffany_id" minlength="1"
-                        maxlength="10" class="materialize-textarea validate" required></textarea>
-                    <label for="tiffany_id">Tiffany ID <span class="required">*</span></label>
-                </div>
+        </div>
+        <!-- Tiffany ID label-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-bars prefix light-blue-text text-darken-4"></i>
+                <textarea id="tiffany_id" name="tiffany_id" minlength="1"
+                    maxlength="10" class="materialize-textarea validate" required></textarea>
+                <label for="tiffany_id">Tiffany ID <span class="required">*</span></label>
             </div>
-            
-<!-- wikipedia label-->
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-external-link-alt prefix light-blue-text text-darken-4"></i>
-                    <textarea id="wiki" name="wiki" minlength="1"
-                        maxlength="200" class="materialize-textarea validate"></textarea>
-                    <label for="wiki">Wikipedia Link</label>
-                </div>
+        </div>
+        <!-- wikipedia label-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-external-link-alt prefix light-blue-text text-darken-4"></i>
+                <textarea id="wiki" name="wiki" minlength="1"
+                    maxlength="200" class="materialize-textarea validate"></textarea>
+                <label for="wiki">Wikipedia Link</label>
             </div>
-
-<p>
-    <span class="required">*</span>Required field
-</p>             
-
-<!-- submit button -->
-            <div class="row">
-                <div class="col s12 center-align">
-                    <button type="submit" class="btn-large light-blue darken-1 text-shadow">
-                        Add Film <i class="fas fa-plus-square right"></i>
-                    </button>
-                </div>
+        </div>
+        <p>
+            <span class="required">*</span>Required field
+        </p>
+        <!-- submit button -->
+        <div class="row">
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                Add Film <i class="fas fa-plus-square right"></i>
+                </button>
             </div>
-        </form>
-    </div>
-
+        </div>
+    </form>
+</div>
 {% endblock %}
