@@ -1,125 +1,113 @@
-body{
-    margin-bottom: 50px;
-    background-image: url("../images/background/backgroundpic.jpg"); 
+body {
+  margin-bottom: 50px;
+  background-image: url("../images/background/backgroundpic.jpg");
 }
 
 
 /*---------------------------------------------------------header and navbar*/
 
+#button_row {
+  display: inline-block;
+}
 
 .text-shadow {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.flashes h4{
-    line-height: 2;
+.flashes h4 {
+  line-height: 2;
 }
 
-
-.brand-logo{
-    margin-left: 10px;
+.brand-logo {
+  margin-left: 10px;
 }
 
 
 /*--------------------------------------------------------------- index page*/
 
-.btn-small{
-    margin: 5px;
-    
+.btn-small {
+  margin: 5px;
 }
-
-
 
 .collapsible-header .col strong {
-    margin: 5px;
-    line-height: 42px;
+  margin: 5px;
+  line-height: 42px;
 }
 
-
-
-
-.collapsible_background{
-    background-color: azure;
+.collapsible_background {
+  background-color: azure;
 }
 
-
-.butt_film{
-    margin-left: auto;
-    margin-right: 0;
+.butt_film {
+  margin-left: auto;
+  margin-right: 0;
 }
 
-
-
-.center-align{
-    color: white;
-    font-weight: 600;
-    
+.center-align {
+  color: white;
+  font-weight: 600;
 }
-
 
 
 /*-------------------------------------------------------------add film page*/
 
-
-.required{
-    color: red;
+.required {
+  color: red;
 }
 
 
 /*--------------------------------------------------------------profile page*/
 
-
-.profile_card{
-    margin-top: 70px;
+.profile_card {
+  margin-top: 70px;
 }
 
 
-/*-----------------------------------------------------------smaller screens*/
-
+/*----------------------------------------------------------------------------------------smaller screens*/
 
 @media (max-width: 576px) {
-    .xs {
-        color: red;
-        font-weight: bold;
-    }
-
-
-#button_row{
+  .xs {
+    color: red;
+    font-weight: bold;
+  }
+  #button_row {
+    width: 110%;
     display: inline-block;
-    width: 100%;
-}    
+  }
 }
-
 
 @media (min-width: 576px) and (max-width:768px) {
-    .sm {
-        color: red;
-        font-weight: bold;
-    }
-
-
-#button_row{
-    display: inline-block;
-    width: 100%;
+  .sm {
+    color: red;
+    font-weight: bold;
+  }
 }
-
-
-}    
-
 
 @media (min-width: 768px) and (max-width:991px) {
-    .sm {
-        color: red;
-        font-weight: bold;
-    }
-
-
-#button_row{
-    display: inline-block;
-    width: 100%;
+  .md {
+    color: red;
+    font-weight: bold;
+  }
 }
 
+@media (min-width: 992px) and (max-width:1200px) {
+  .md {
+    color: red;
+    font-weight: bold;
+  }
+  #button_row {
+    display: inline-block;
+    width: 100%;
+  }
+}
 
-
-
-}    
+@media (min-width: 600px) and (max-width:824px) {
+  .bt {
+    color: red;
+    font-weight: bold;
+  }
+  #button_row {
+    display: inline-block;
+    width: 100%;
+  }
+}
