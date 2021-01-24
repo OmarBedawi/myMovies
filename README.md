@@ -61,25 +61,56 @@ The jinja parenthesis are wrapped in blue lines in the picture.
 I built this website using the Materialize library.
 All the componenets I used like the top NavBar, the side Bar, forms, buttons, collapsibles come from that library that is very helpful with the responsivity on every screen size.
 
+The homepage is where the list of films are located, because the user wish to have a direct access to the collection when he open the application.
+
+On the top of the list there is a search bar to locate the desire film among a collection of more than 500 films.
+Every film is stored and displayed in a collapsible that showing only the film title, but when you click on the collapsible it expands the area and showing the information that the user needs.
+The buttons "delete" and "edit" next to the film title are available only for the users who have added that specific film.
+In case of films added by other users the buttons are not displayed.
+In the expandable area you can find information as the genre of the film, the year, the ID of the user, a wikipedia link and the username of who has added the film.
+
+foto collezione
+foto tiff id
 
 
-I built a responsive navbar, that shows a toggle menu when the screen size is below 991px. 
-To build it I followed an accurate and guided tutorial that you can find at this [link](https://youtu.be/gt8zOLQ8A0w)
+The "add film" page is composed by a form with 5 labels to fill with the information desired by the user: 
 
-The homepage presents a carousel with pictures followed by the awards won by the pizzeria and a google map.
+* the title
+* the genre
+* the year
+* the Tiffany ID
+* a wikipedia link
 
-The menu page gives the possibility to see the pizza that you desire when you click on the button below every pizza: infact an image of the relative pizza, will appear.
-Same thing happen with every dessert.
+The user (Tiffany) has nubered every movie and attached a label on it. That number is what is called Tiffany ID.
 
-The ourstory page is telling a piece of history of the pizzeria. At the bottom of the page there is also a short video of the staff in action.
+![Tiffany ID](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/tiff_films3.jpg?raw=true)
 
-The gallery page is a collection of pictures shared by the pizzeria staff and the customers.
 
-The order on-line page is for who want a home delivery or to pick up at the pizzeria.
+The "edit film" page is identical to the "add film" page but you edit informations instead to add it.
 
-The CSS file is divided by comments, that I used as title to separate the html pages or elements like map and carousel and the different screen sizes.
+![Tiffany ID](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/add_film.png?raw=true)
+![Tiffany ID](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/edit_film.png?raw=true)
 
-This make any future correction or research much easier.
+
+
+The "register" page allows you to create your username and password.
+
+The "log in" page allows you to access (with your username and password) the functions of the app.
+
+If you are not logged in, you can only view the list of films an open the expandable area in the homepage.
+When you are logged in you can add films to the collection and they will be labeled as films added by you.
+You can edit or delete only the films added by your username.
+
+
+The "profile" page is telling you which profile is logged in.
+
+All the films and the relative informations in the homepage are stored in a database called Mongo DB, and thanks to Flask and Python I have been able to import and connect
+them all to my Github repository and create the desired functions inside the app.py file.
+
+The CSS file is divided by comments, that I used as title to separate the html pages or the screen size secions. 
+This make any future correction or class/id research much easier.
+
+
 
 ![css](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/css_comments.png?raw=true)
 
@@ -93,7 +124,7 @@ This make any future correction or research much easier.
 ### WIREFRAMES
 
 
-Wireframes information can be found [here](static/readMe_files/wireframes/wireframe.md).
+The wireframes information can be found [here](static/readMe_files/wireframes/wireframe.md).
 
 
 
@@ -104,21 +135,16 @@ This project makes use of:
 * [HTML] - base language for this project.
 * [CSS] - Used for Styling the HTML code
 * [JavaScript] - Used to make the web app interactive.
-    
-    
+* [Python] -
+* [Mongo DB] -
+* [Flask] -
+* [Heroku] - 
+
+
 ### Libraries    
-* [Bootstrap](https://getbootstrap.com/) - Used for responsive navbar, for the menu page and the form.
+* [Materialize](https://materializecss.com/) - Used for responsive navbar, for the menu page and the form.
 * [JQuery](https://jquery.com/) - The project uses **JQuery** to simplify DOM manipulation.
 * [FontAwseome](https://fontawesome.com/) - Used for all the icons on the site.
-* [Google Fonts](https://fonts.google.com/) - Used for the 'Sansita Swashed' fonts.
-* [Hover.css](https://ianlunn.github.io/Hover/) - Used to animate the social media icons.
-
-
-
-### API
-
-* [Emailjs](https://www.emailjs.com/) - Used to send the contact form in an email format to my gmail account.
-* [Google Cloud Platform](https://console.cloud.google.com/) - Used to display a map provided from Google service, to show the pizzeria location.
 
 
 
@@ -255,7 +281,7 @@ This web app was developed in Gitpod and pushed to the remote repository, GitHub
 
 ### Used commands during deployment:
 
-* git add . - to add the files to the staging area.
+* git add -A - to add the files to the staging area.
 * git commit -m "text message here" - to commit the files.
 * git push - to push to origin master branch on to GitHub.
 * git status - to see the current status of the files.
