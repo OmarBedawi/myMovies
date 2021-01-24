@@ -17,7 +17,7 @@ The goal of this website is to easily display the collection and facilitate the 
 
 ### Target audience is:
 
-* A films collector who was looking for an application to storage and have fast and easy access to its films informations.
+* Tiffany: a films collector who is looking for an application to storage and have fast and easy access to her films informations.
 
 
 ### Business goals
@@ -81,15 +81,16 @@ The "add film" page is composed by a form with 5 labels to fill with the informa
 * the Tiffany ID
 * a wikipedia link
 
-The user (Tiffany) has nubered every movie and attached a label on it. That number is what is called Tiffany ID.
+The user (Tiffany) has numbered every movie and attached a label on it. The numeration is sorted by 
+That number is what is called Tiffany ID in the expandable area.
 
 ![Tiffany ID](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/tiff_films3.jpg?raw=true)
 
 
 The "edit film" page is identical to the "add film" page but you edit informations instead to add it.
 
-![Tiffany ID](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/add_film.png?raw=true)
-![Tiffany ID](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/edit_film.png?raw=true)
+![add page](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/add_film.png?raw=true)
+![edit page](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/edit_film.png?raw=true)
 
 
 
@@ -112,10 +113,9 @@ This make any future correction or class/id research much easier.
 
 
 
-![css](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/css_comments.png?raw=true)
+![python file](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/python_file.png?raw=true)
 
-
-![css2](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/css_screens.png?raw=true)
+![css](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/css.png?raw=true)
 
 
 
