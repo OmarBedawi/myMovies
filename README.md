@@ -80,7 +80,7 @@ The "add film" page is composed by a form with 5 labels to fill with the informa
 * the genre
 * the year
 * the Tiffany ID
-* a wikipedia link
+* a Wikipedia link
 
 The user (Tiffany) has numbered every movie and attached a label on it. The numeration is sorted by 
 That number is what is called Tiffany ID in the expandable area.
@@ -133,19 +133,26 @@ The wireframes information can be found [here](static/readMe_files/wireframes/wi
 ## Technologies Used
 ### Languages
 This project makes use of:
-* [HTML] - base language for this project.
+* [HTML] - Base language for this project.
 * [CSS] - Used for Styling the HTML code
 * [JavaScript] - Used to make the web app interactive.
-* [Python] - Used to 
-* [Mongo DB] -
-* [Flask] -
-* [Heroku] - 
+* [Python](https://www.python.org) - Used to build the functions of every html page
+* [Mongo DB](https://www.mongodb.com) - Mongo DB is a document-oriented database program. Used to store all the films and users in the application.
+* [Heroku](https://www.heroku.com) - Heroku is a container-based cloud Platform. Used to deploy the application and create the domain.
 
 
 ### Libraries    
 * [Materialize](https://materializecss.com/) - Used for responsive navbar, for the menu page and the form.
 * [JQuery](https://jquery.com/) - The project uses **JQuery** to simplify DOM manipulation.
 * [FontAwseome](https://fontawesome.com/) - Used for all the icons on the site.
+
+
+
+
+### API
+
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Used to have more control and better interaction with the databases.
+
 
 
 
