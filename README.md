@@ -30,24 +30,23 @@ The goal of this website is to easily display the collection and facilitate the 
 
 ### Customer goals
 
-* Find easy to access the collection and localize the desired films, typing in the search bar the film title or only one word of it. 
-* Find easy to add a new film to the collection and eventually modify its information or delete the title from the collecion .
+* Find easy to access the collection and localize the desired films: typing in the search bar the film title or only one word of it. 
+* Find easy to add a new film to the collection and eventually modify its information or delete it from the collection.
 
 
 ## Installation
 
 In the head of the project I have installed the links to have access to different libraries. In the picture, the links are wrapped in red.
 
-1. Materialize: a library with templates for buttons, forms, sidenav and so many other components. For this project for example I used it to build the navigation bar, the 
-search bar and the buttons.
 1. Font Awesome: is an icon library. 
-1. Cdnjs is a is an ultra-fast, reliable, globally available content delivery network for open-source libraries.
+1. Materialize: a library with templates for buttons, forms, sidenav and so many other components. For this project for example I used it to build the navigation bar, 
+the search bar and the buttons.
 1. The last link below is showing where the style.css file is located.
 
 This project has been built using jinja template engine. 
-Jinja allows us to write an html code and be able to reproduce that code in all the other html page where we want to use it again.
-Jinja is very useful for header, navbar and footers because I don't have to code them again.
-The jinja parenthesis are wrapped in blue lines in the picture.
+Jinja allows you to write an html code and be able to reproduce that code in all the other html page where you want to use it again.
+Jinja is very useful for header, navbar and footers because you don't need to code them again.
+The jinja parenthesis are wrapped in blue lines in the picture below.
 
 ![header](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/1_header.png?raw=true)
   
@@ -60,15 +59,16 @@ The jinja parenthesis are wrapped in blue lines in the picture.
 ## User Stories
 
 I built this website using the Materialize library.
-All the componenets I used like the top NavBar, the side Bar, forms, buttons, collapsibles come from that library that is very helpful with the responsivity on every screen size.
+All the componenets I used like the top NavBar, the side Bar, forms, buttons, collapsibles come from that library that is very helpful to provide you very responsive components.
 
-The homepage is where the list of films are located, because the user wish to have a direct access to the collection when he open the application.
+The homepage is where the list of films are located, because the user wish to have a direct access to the collection when she start the application.
 
-On the top of the list there is a search bar to locate the desire film among a collection of more than 500 films.
-Every film is stored and displayed in a collapsible that showing only the film title, but when you click on the collapsible it expands the area and showing the information that the user needs.
+Above the collection there is a search bar to locate the desire film among a list of more than 500 films.
+Every film is stored and displayed in a collapsible that showing only the film title, but when you click on it, the collapsible it expands his area and showing the information
+that the user needs.
 The buttons "delete" and "edit" next to the film title are available only for the users who have added that specific film.
-In case of films added by other users the buttons are not displayed.
-In the expandable area you can find information as the genre of the film, the year, the ID of the user, a wikipedia link and the username of who has added the film.
+In case of films added by other users the "delete" and "edit" buttons are not displayed.
+In the expandable area you can find informations as the genre of the film, the year, the ID of the user, a wikipedia link and the username of who has added the film.
 
 foto collezione
 foto tiff id
@@ -82,7 +82,7 @@ The "add film" page is composed by a form with 5 labels to fill with the informa
 * the Tiffany ID
 * a Wikipedia link
 
-The user (Tiffany) has numbered every movie and attached a label on it. The numeration is sorted by 
+The user (Tiffany) has numbered every movie and attached a label on it.
 That number is what is called Tiffany ID in the expandable area.
 
 ![Tiffany ID](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/tiff_films3.jpg?raw=true)
@@ -137,14 +137,14 @@ This project makes use of:
 * [CSS] - Used for Styling the HTML code
 * [JavaScript] - Used to make the web app interactive.
 * [Python](https://www.python.org) - Used to build the functions of every html page
-* [Mongo DB](https://www.mongodb.com) - Mongo DB is a document-oriented database program. Used to store all the films and users in the application.
+* [Mongo DB](https://www.mongodb.com) - Mongo DB is a document-oriented database program. Used to store all the films and users of the application.
 * [Heroku](https://www.heroku.com) - Heroku is a container-based cloud Platform. Used to deploy the application and create the domain.
 
 
 ### Libraries    
-* [Materialize](https://materializecss.com/) - Used for responsive navbar, for the menu page and the form.
+* [Materialize](https://materializecss.com/) - Used for responsive navbar, forms, buttons and collapsibles.
 * [JQuery](https://jquery.com/) - The project uses **JQuery** to simplify DOM manipulation.
-* [FontAwseome](https://fontawesome.com/) - Used for all the icons on the site.
+* [FontAwseome](https://fontawesome.com/) - Used for all the icons in the application.
 
 
 
@@ -166,7 +166,6 @@ This project makes use of:
 * [Gitpod](https://www.gitpod.io/) - Used as IDE for this project.
 * [Git](https://git-scm.com/) - Used for Version Control
 * [GitHub](https://github.com/) - Used to host repository and live website.
-* [Github Pages](https://pattern-projects.github.io/oireachtas-ifd-project/) - Website hosted on **Github Pages**
 * [Am I Responsive](http://ami.responsivedesign.is/) - Used for testing purposes as well as creating the image to display the web pages on different devices.
 * [W3 Html validator](https://validator.w3.org/) - Used to test and validate my html code.
 * [W3 Css validator](https://jigsaw.w3.org/) - Used to test and validate my css code.
