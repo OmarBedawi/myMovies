@@ -65,7 +65,7 @@ body {
 
 /*----------------------------------------------------------------------------------------smaller screens*/
 
-@media (max-width: 576px) {
+@media (min-width: 280px) and (max-width: 576px) {
   .xs {
     color: red;
     font-weight: bold;
@@ -73,6 +73,10 @@ body {
   #button_row {
     width: 110%;
     display: inline-block;
+  }
+
+  #search_butt{
+      display: inline-block;
   }
 }
 
