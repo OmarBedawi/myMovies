@@ -61,11 +61,11 @@ The jinja parenthesis are wrapped in blue lines in the picture below.
 ## User Stories
 
 I built this website using the Materialize library.
-All the componenets I used like the top NavBar, the side Bar, forms, buttons, collapsibles come from that library that is very helpful to provide you very responsive components.
+All the componenets I used like the top NavBar, the side Bar, forms, buttons, collapsibles come from this library, that is very helpful to provide you very responsive components.
 
 The homepage is where the list of films are located, because the user wish to have a direct access to the collection when she starts the application.
 
-Above the collection there is a search bar to locate the desire film among a list of more than 500 films.
+Above the collection there is a search bar to find the desire film among a list of more than 500 films.
 
 Every film is stored and displayed in a collapsible that shows only the film title, but when you click on it, the collapsible expands his area and shows the informations
 that the user needs.
@@ -74,7 +74,7 @@ The buttons "delete" and "edit" next to the film title are available only for th
 
 In case of films added by other users the "delete" and "edit" buttons are not displayed.
 
-In the expandable area you can find informations as the genre of the film, the year, the ID of the user, a wikipedia link and the username of who has added the film.
+In the expandable area you can find informations as the genre of the film, the year, the ID of the user, a Wikipedia link and the username of who has added the film.
 
 foto collezione
 foto tiff id
@@ -105,7 +105,7 @@ The "register" page allows you to create your username and password.
 
 The "log in" page allows you to access (with your username and password) the functions of the app.
 
-If you are not logged in, you can only view the list of films an open the expandable area in the homepage.
+If you are not logged in, you can only view the list of films and open the expandable area in the homepage.
 When you are logged in you can add films to the collection and they will be labeled as films added by you.
 You can edit or delete only the films added by your username.
 
@@ -178,6 +178,7 @@ This project makes use of:
 * [JSHint](https://jshint.com/) - Used to validate my Javascript code.
 * [Color Scheme Designer](http://colorschemedesigner.com/) - Used to test colour combinations.
 * [Free Formatter](https://www.freeformatter.com/) - Used to format my html, css and javascript code.
+* [Python Formatter](https://codebeautify.org/python-formatter-beautifier) - Used to format my python files
 * [PageSpeed insights](https://developers.google.com/speed/pagespeed/insights/) - Used for testing the loading speed of the site.
 
 
@@ -259,35 +260,6 @@ Contact form:
 
 
 
-# Bugs
-
-The project presents two little bugs that I still need to correct:
-
-1. When the carousel is at last picture, the right arrow suppose to disappear but it doesn't.
-1. Can't make the submit button to submit and clear the form at the same time. The two funtions for now, work only alternatively.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Deployment
 
 This web app was developed in Gitpod and pushed to the remote repository, GitHub. The live page is hosted on GitHub Pages.
@@ -302,7 +274,7 @@ This web app was developed in Gitpod and pushed to the remote repository, GitHub
 ### Hosting on GitHub Pages
 
 * Log into GitHub.
-* From the list of repositories choose [PizzeriaVecchiaMilano](https://github.com/OmarBedawi/PizzeriaVecchiaMilano).
+* From the list of repositories choose [myMovies](https://github.com/OmarBedawi/myMovies).
 * Go to settings.
 * Scroll down to GitHub Pages section.
 * Select as a source master branch.
@@ -314,12 +286,12 @@ For more detailed information regarding deployment to GitHub Pages click [here](
 ### How to run this project locally
 #### Clone this project from GitHub:
 
-* Go to [PizzeriaVecchiaMilano](https://github.com/OmarBedawi/PizzeriaVecchiaMilano) GitHub repository.
+* Go to [myMovies](https://github.com/OmarBedawi/myMovies) GitHub repository.
 * Click on "Clone or download" green button.
 * Copy the URL to the repository.
 * Open the terminal in your IDE.
 * Choose the working directory where you would like to have the cloned repository.
-* Type git clone, and add the URL you copied from Github: git clone https://github.com/OmarBedawi/PizzeriaVecchiaMilano-Web-App.git
+* Type git clone, and add the URL you copied from Github: git clone https://github.com/OmarBedawi/myMovies-Web-App.git
 * Press Enter and your local clone will be created.
 
 For more information regarding cloning of a repository click here.
@@ -327,9 +299,6 @@ For more information regarding cloning of a repository click here.
 ### Acknowledgements
 Thank you to the following for inspiration, motivation and the direction I needed:
 
-- Seun Owonikoko   (my mentor)
+- Antonio Rodriguez   (my mentor)
 - Code Institute staff
 
-## Disclaimer
-
-This web page was created for educational purposes only.
