@@ -67,16 +67,18 @@ The search bar:
 1. Try to click on the "Reset" button and verify that the list of films is restored again in the "Home" page.
 
 
+16)
+17)
 
 
 
-
-
-
+1. Try to type one word that is contained in one or more film title, and verify that all the films with that specific word in the title are filtered and displayed to us. 
+1. Try to type the whole title of a film and verify that the specific film is diplayed
 
    
    
-   
+  18)
+  19)
    
    
    
