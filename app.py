@@ -34,7 +34,14 @@ def get_films():
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
-    films = list(mongo.db.films.find({"$text": {"$search": query}}))
+    films = list(mongo.db.films.find({"$text": {"$search": query}}).sort("title"))
+    for film in films:
+        try:
+            film["created_by"] = mongo.db.users.find_one(
+                {"_id": ObjectId(film["created_by"])}
+            )["username"]
+        except:
+            pass
     return render_template("index.html", films=films)
 
 
