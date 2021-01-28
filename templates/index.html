@@ -25,20 +25,15 @@
 <ul class="collapsible collapsible_background">
     {% for film in films %}
     <li>
-        <div class="collapsible-header white-text light-blue darken-4 text-shadow">
-            <div class="col s3">
-                <i class="fas fa-caret-down"></i>
+        <div class="collapsible-header white-text light-blue darken-4 text-shadow butt_film_small">
+            <div class="col s9">
+                <i class="fas fa-caret-down"></i>                <strong>{{ film.title }}</strong>
             </div>
-            <div class="butt_film_small">
-                <div class="col s9">
-                    <strong>{{ film.title }}</strong>
-                </div>
-                <div class="col s3 butt_film">
-                    {% if session.user|lower == film.created_by|lower %}
-                    <a href="{{ url_for('delete_film', film_id=film._id) }}" class="btn-small green accent-4" onclick="return confirm('Are you sure to delete this film?')">Delete</a>
-                    <a href="{{ url_for('edit_film', film_id=film._id) }}" class="btn-small light-blue lighten-1">Edit</a>
-                    {% endif %}
-                </div>
+            <div class="col s3 butt_film">
+                {% if session.user|lower == film.created_by|lower %}
+                <a href="{{ url_for('delete_film', film_id=film._id) }}" class="btn-small green accent-4" onclick="return confirm('Are you sure to delete this film?')">Delete</a>
+                <a href="{{ url_for('edit_film', film_id=film._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+                {% endif %}
             </div>
         </div>
         <!-- expandable area-->
