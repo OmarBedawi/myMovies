@@ -28,6 +28,8 @@ Login, Register and Profile pages:
 
 
 ![Test 02](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/02_user_exist.png?raw=true)
+
+
 ![Test 03](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/03_registered.png?raw=true)
 ![Test 04](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/04_log_out.png?raw=true)
 ![Test 05](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/05_register.png?raw=true)
