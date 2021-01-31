@@ -189,65 +189,10 @@ This project makes use of:
 
 Testing information can be found [here](static/readMe_files/testing/testing.md).
 
-Navbar:
-1. Go to any html page.
-1. Try to reduce the screen size to any size below 991px and verify that a toggle menu appears on the top right angle of the screen.
-1. Try to click on the toggle menu and verify that a list with all the pages of the website appears to you.
-1. Try to click on every page provided by the toggle menu and verify that the pages are all connected between each other and reachable from any other page.
-1. Try to hover the mouse over the Menu, Ourstory and Gallery links in the navbar and verify that their color text change to yellow and back to white when you move the mouse out.
-1. Try to hover the mouse over the social media icons in the footer and verify that the icons color change to yellow and back to white when you move the mouse out.
-1. Try to click on the social media icons and verify that they are correctly linked.
-1. Try to click on the logo and verify that it redirect you to the "index" page.
-1. Try to scroll any html page and verify that the navbar is fixed.
 
+### A picture of Tiffany real life collection
 
-Carousel:
-1. Go to the "index" page.
-1. Click on the right arrow of the carousel and verify that the second image slide to the center of the carousel.
-1. Click on the right arrow of the carousel and verify that the left arrow appears.
-1. After the first click on the right arrow, click on left arrow to go back to the first picture, and verify that the left arrow disappears.
-1. Click on the right arrow until you reach the last picture, and verify that the right arrow disappears.
-1. Click on the dots right below the carousel and verify that every dot matches a picture.
-
-
-
-Menu:
-1. Go to the "menu" page.
-1. Click on any button and verify that an image of the relative pizza or dessert will appear on  the page.
-1. Click on any button and verify that the text "Show" on the button change in "Hide".
-
-![menu1](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/menu1.png?raw=true)
-![menu2](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/menu2.png?raw=true)
-
-
-
-
-Video:
-1. Go to the "our story" page.
-1. Scroll to the end of the page where the video is placed, try to click on the "play" command and verify that the video is starting.
-
-
-Gallery:
-1. Go to the "gallery" page.
-1. Set the size of the screen to at least 992px and verify that every raw has 4 columns of pictures.
-1. Set the size of the screen between 576px and 992px and verify that every raw has 3 columns of pictures.
-1. Set the size of the screen to less than 576px and verify that every raw has 2 columns of pictures.
-
-![gall1](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/gall1.png?raw=true)
-![gall2](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/gall2.png?raw=true)
-![gall3](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/gall3.png?raw=true)
-
-
-Contact form:
-1. Go to the "Order on-line" page.
-1. Try to submit the form with empty fields and verify that an error message about the required fields appears.
-1. Try to submit the form with an invalid email address and verify that a relevant error message appears.
-1. Try to submit the form with all inputs valid (and a valid email ) and verify that a confirmation email is sent to the email address provided.
-1. Try to submit the form and verify that all the fields are cleared.
-
-
-![email](https://raw.githubusercontent.com/OmarBedawi/PizzeriaVecchiaMilano/master/assets/images/readMe_files/email.png?raw=true)
-###### Verify that the contact form information has been sent to my Gmail account by emailjs.
+![Tiffany Collection](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/tiff_films_collection.jpg?raw=true)
 
 
 ## Code Validation
