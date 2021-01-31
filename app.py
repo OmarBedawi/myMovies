@@ -20,7 +20,8 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_films")
 def get_films():
-    films = list(mongo.db.films.find().sort("title"))
+    user_id = mongo.db.users.find_one({"username": session["user"]})["_id"]
+    films = list(mongo.db.films.find({"created_by": user_id}).sort("title"))
     for film in films:
         try:
             film["created_by"] = mongo.db.users.find_one(
@@ -28,8 +29,8 @@ def get_films():
             )["username"]
         except:
             pass
-    return render_template("index.html", films=films)
-
+    return render_template("my_films.html", films=films)
+    
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
@@ -42,7 +43,7 @@ def search():
             )["username"]
         except:
             pass
-    return render_template("index.html", films=films)
+    return render_template("my_films.html", films=films)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -66,7 +67,7 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
-        return redirect(url_for("profile", username=session["user"]))
+        return redirect(url_for("get_films", username=session["user"]))
 
     return render_template("register.html")
 
@@ -86,7 +87,7 @@ def login():
             ):
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(request.form.get("username")))
-                return redirect(url_for("profile", username=session["user"]))
+                return redirect(url_for("get_films", username=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -97,7 +98,7 @@ def login():
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
 
-    return render_template("login.html")
+    return render_template("index.html")
 
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
@@ -127,7 +128,7 @@ def add_film():
             "title": request.form.get("title"),
             "genre": request.form.get("genre"),
             "year": request.form.get("year"),
-            "tiffany_id": request.form.get("tiffany_id"),
+            "collection_id": request.form.get("collection_id"),
             "wiki": request.form.get("wiki"),
             "created_by": ObjectId(user["_id"]),
         }
@@ -145,7 +146,7 @@ def edit_film(film_id):
             "title": request.form.get("title"),
             "genre": request.form.get("genre"),
             "year": request.form.get("year"),
-            "tiffany_id": request.form.get("tiffany_id"),
+            "collection_id": request.form.get("collection_id"),
             "wiki": request.form.get("wiki"),
             "created_by": ObjectId(user["_id"]),
         }

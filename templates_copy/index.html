@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 class="white-text text-darken-4 center-align"><strong>All Films</strong></h3>
+<!-- search bar -->
+<div class="row card-panel grey lighten-5">
+    <form action="{{ url_for('search') }}" method="post" class="col s12">
+        <div class="row valign-wrapper center-align search_butt">
+            <div class="input-field col s12 m8">
+                <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                <input type="text" name="query" id="query" minlength="2" class="validate" required>
+                <label for="query">Search Film</label>
+            </div>
+            <!-- search and reset buttons-->
+            <div class="col s12 m4" id="button_row">
+                <a href="{{ url_for('get_films') }}" class="red btn text-shadow">Reset</a>
+                <button type="submit" class="light-blue darken-1 btn text-shadow">
+                <i class="fas fa-search left"></i> Search
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- films are listed in collapsible to hide contents that are not immediately relevant-->
+{% if films|length > 0 %}
+<ul class="collapsible collapsible_background">
+    {% for film in films %}
+    <li>
+        <div class="collapsible-header white-text light-blue darken-4 text-shadow butt_film_small">
+            <div class="col s9">
+                <i class="fas fa-caret-down"></i>                <strong>{{ film.title }}</strong>
+            </div>
+            <div class="col s3 butt_film">
+                {% if session.user|lower == film.created_by|lower %}
+                <a href="{{ url_for('delete_film', film_id=film._id) }}" class="btn-small green accent-4" onclick="return confirm('Are you sure to delete this film?')">Delete</a>
+                <a href="{{ url_for('edit_film', film_id=film._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+                {% endif %}
+            </div>
+        </div>
+        <!-- expandable area-->
+        <div class="collapsible-body">
+            <strong>Genre: {{ film.genre }}</strong>
+            <p>Year: {{ film.year }}</p>
+            <p>Tiffany ID: {{ film.tiffany_id }}</p>
+            <p><a target="_blank" href="{{ film.wiki }}">Wikipedia Link</a></p>
+<!--        <p><em>Added by: {{ film.created_by }}</em></p>   -->
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<h3 class="red center-align">No Results Found</h3>
+{% endif %}
+{% endblock %}
