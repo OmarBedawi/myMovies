@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 class="white-text text-darken-4 center-align"><strong>Edit Film</strong></h3>
+<div class="row card-panel grey lighten-5">
+    <form class="col s12" method="POST" action="{{ url_for('edit_film', film_id=film._id) }}">
+        <!-- title label-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                <input id="title" name="title" minlength="2" maxlength="100"
+                    value="{{ film.title }}" type="text" class="validate" required>
+                <label for="title">Title</label>
+            </div>
+        </div>
+        <!-- genre label-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="far fa-list-alt prefix light-blue-text text-darken-4"></i>
+                <textarea id="genre" name="genre" minlength="2"
+                    maxlength="100" class="materialize-textarea validate" required>
+                {{- film.genre -}}
+                </textarea>
+                <label for="genre">Genre</label>
+            </div>
+        </div>
+        <!-- year label-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+                <input id="year" name="year" minlength="4" maxlength="4" 
+                    type="text" value="{{ film.year }}" placeholder="yyyy" required>
+                <label for="year">Year</label>
+            </div>
+        </div>
+        <!-- Collection ID label-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-bars prefix light-blue-text text-darken-4"></i>
+                <input id="collection_id" name="collection_id" minlength="1" maxlength="10"
+                    value="{{ film.collection_id }}" type="text" class="validate" required>
+                <label for="collection_id">Collection ID</label>
+            </div>
+        </div>
+        <!-- wikipedia label-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-external-link-alt prefix light-blue-text text-darken-4"></i>
+                <input id="wiki" name="wiki" minlength="1" maxlength="200"
+                    value="{{ film.wiki }}" type="text" class="validate">
+                <label for="wiki">Wikipedia Link</label>
+            </div>
+        </div>
+        <!-- submit button -->
+        <div class="row">
+            <div class="col s12 center-align">
+                <!-- cancel button -->
+                <a href="{{ url_for('get_films') }}" class="btn-large red text-shadow back">
+                back<i class="fas fa-times-circle right"></i>
+                </a>
+                <!-- edit button-->                    
+                <button type="submit" class="btn-large light-blue darken-1 text-shadow edit center-align">
+                Edit <span class="film">Film</span><i class="fas fa-edit right"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
