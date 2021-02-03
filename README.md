@@ -1,15 +1,118 @@
-# Tiffany's Films Archive
+# Film's Archive Application
 
 
 ![screens](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/tiff_responsive.png?raw=true)
 
 
 
-This is the source code of the Tiffany's Films Archive. 
+This is the source code of the Film's Archive Application. 
 
-To see it in action just click this [link](http://my-first-heroku-for-movies.herokuapp.com/get_films).
+To see it in action just click this [link](http://my-first-heroku-for-movies.herokuapp.com/login).
 
 
+
+
+## User Experience (UX)
+
+-   ### User stories
+
+    -   #### First Time Visitor Goals
+
+        1. As a First Time Visitor, I want to easily understand the main purpose of the site.
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the application to find content.
+        3. As a First Time Visitor, I want to easily be able to add new records.
+        
+
+    -   #### Returning Visitor Goals
+
+        1. As a Returning Visitor, I want to have easy and fast access to the record's informations.
+        2. As a Returning Visitor, I want to easily be able to filter a specific record that I'm searching.
+        3. As a Returning Visitor, I want to easily be able to update or cancel an exsisting record.
+
+    -   #### Frequent User Goals
+        1. As a Frequent User, I want to check to see if there are any newly added function or content.
+        2. As a Frequent User, I want to check to see if there are any film preview or trailer related to the records.
+        3. As a Frequent User, I want to check to see if there is a Newsletter so that I am emailed any major updates and/or changes to the website.
+
+-   ### Design
+    -   #### Colour Scheme
+        -   The two main colours used are blue, and white.
+    
+    -   #### Imagery
+        -   Imagery is important. The background image with all the film covers is designed to be striking and catch the user's attention and let him understand what is the topic of the website. 
+
+
+*   ### Wireframes
+
+
+The wireframes information can be found [here](static/readMe_files/wireframes/wireframe.md).
+
+
+## Features
+
+-   Responsive on all device sizes
+
+-   Interactive elements
+
+
+## Technologies Used
+
+### Languages Used
+
+This project makes use of:
+* [HTML] - Base language for this project.
+* [CSS] - Used for Styling the HTML code
+* [JavaScript] - Used to make the web app interactive.
+* [Python](https://www.python.org) - Used to build the functions of every html page
+* [Mongo DB](https://www.mongodb.com) - Mongo DB is a document-oriented database program. Used to store all the films and users of the application.
+* [Heroku](https://www.heroku.com) - Heroku is a container-based cloud Platform. Used to deploy the application and create the domain.
+
+
+### Libraries    
+* [Materialize](https://materializecss.com/) - Used for responsive navbar, forms, buttons and collapsibles.
+* [JQuery](https://jquery.com/) - The project uses **JQuery** to simplify DOM manipulation.
+* [FontAwseome](https://fontawesome.com/) - Used for all the icons in the application.
+
+
+
+
+### API
+
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Used to have more control and better interaction with the databases.
+
+
+
+
+### TOOLS
+
+* [Google Chrome] - Used for browser and dev tools
+* [Mozilla Firefox] - Used for browser and dev tools
+* [Microsoft Edge] - Used for browser and dev tools
+* [Google] - **Google** was used for research.
+* [Balsamiq Cloud](https://balsamiq.cloud/) - Used for creation of wireframes.
+* [Gitpod](https://www.gitpod.io/) - Used as IDE for this project.
+* [Git](https://git-scm.com/) - Used for Version Control
+* [GitHub](https://github.com/) - Used to host repository and live website.
+* [Am I Responsive](http://ami.responsivedesign.is/) - Used for testing purposes as well as creating the image to display the web pages on different devices.
+* [W3 Html validator](https://validator.w3.org/) - Used to test and validate my html code.
+* [W3 Css validator](https://jigsaw.w3.org/) - Used to test and validate my css code.
+* [JSHint](https://jshint.com/) - Used to validate my Javascript code.
+* [Color Scheme Designer](http://colorschemedesigner.com/) - Used to test colour combinations.
+* [Free Formatter](https://www.freeformatter.com/) - Used to format my html, css and javascript code.
+* [Python Formatter](https://codebeautify.org/python-formatter-beautifier) - Used to format my python files
+* [PageSpeed insights](https://developers.google.com/speed/pagespeed/insights/) - Used for testing the loading speed of the site.
+
+
+![speedtest](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/speed_test.png?raw=true)
+###### A caption of a speed test on PageSpeed insights.
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Goals
 ### Tiffany's Films Archive goals
 
@@ -128,10 +231,7 @@ This make any future correction or class/id research much easier.
 
 
 
-### WIREFRAMES
 
-
-The wireframes information can be found [here](static/readMe_files/wireframes/wireframe.md).
 
 
 
