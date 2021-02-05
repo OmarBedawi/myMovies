@@ -1,7 +1,7 @@
 # Film's Archive Application
 
 
-![screens](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/tiff_responsive.png?raw=true)
+![screens](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/screenshots/film_responsive.png?raw=true)
 
 
 
@@ -164,7 +164,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/OmarBedawi/myMovies
 ```
 
 7. Press Enter. Your local clone will be created.
