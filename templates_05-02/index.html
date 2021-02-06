@@ -1,15 +1,41 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="coll_login">
+<ul class="collapsible">
+    <li>
+      <div class="collapsible-header white-text light-blue darken-4 text-shadow coll_border">
+          <div class="col s9">
+                <i class="fas fa-caret-down"></i>   
+                             
+          </div>
+          
+          <p class="coll_title"><i class="fas fa-info-circle"></i>What is Film's Archive?</p></div>
+
+      <div class="collapsible-body center-align black-text light-blue lighten-5">
+          <h6><b>Film's Archive is here to change your life.</b></h6><br>
+           <p>  Now you have the opportunity to transfer and store your entire film collection into an interactive and easy to use application.</p>
+         <p>   Everything you need is to create your own account in the "Register" page and then from the "Add Film" page, you can add as many
+              films as you wish!</p>
+        <p>   Don't miss the great experience to have your own collection accessible from your laptop or mobile phone!</p> 
+        
+    </div>
+    </li>
+    
+  </ul>
+</div>
+
+
+
 <h3 class="center-align">Log In</h3>
 <div class="row">
-    <form class="col s12 m8 offset-m2 right" method="POST" action="{{ url_for('login') }}">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
         <div class="card-panel">
             <!-- username -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-user-cog prefix light-blue-text text-darken-4"></i>
-                    <input id="username" name="username" type="text" minlength="4"
-                        maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                    <input id="username" name="username" type="text" minlength="3"
+                        maxlength="15" pattern="^[a-zA-Z0-9.]{3,15}$" class="validate" required>
                     <label for="username">Username</label>
                 </div>
             </div>
