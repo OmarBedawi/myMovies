@@ -20,20 +20,19 @@ To see it in action just click this [link](http://my-first-heroku-for-movies.her
 
         1. As a First Time Visitor, I want to easily understand the main purpose of the site.
         2. As a First Time Visitor, I want to be able to easily navigate throughout the application to find content.
-        3. As a First Time Visitor, I want to easily be able to add new records.
+        3. As a First Time Visitor, I want to easily be able to add new films.
         
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to have easy and fast access to the record's informations.
-        2. As a Returning Visitor, I want to easily be able to filter a specific record that I'm searching.
+        1. As a Returning Visitor, I want to have easy and fast access to the film's informations.
+        2. As a Returning Visitor, I want to easily be able to filter one or more specific film title that I'm looking for.
         3. As a Returning Visitor, I want to easily be able to update or cancel an exsisting record.
 
     -   #### Frequent User Goals
         1. As a Frequent User, I want to check to see if there are any newly added function or content.
-        2. As a Frequent User, I want to check to see if there are any film preview or trailer related to the records.
-        3. As a Frequent User, I want to check to see if there is a Newsletter so that I am emailed any major updates and/or changes to the website.
-
+        2. As a Frequent User, I want to check to see if there are any new options to manipulate the record information.
+        
 -   ### Design
     -   #### Colour Scheme
         -   The two main colours used are blue, and white.
