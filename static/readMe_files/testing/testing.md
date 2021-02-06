@@ -20,7 +20,7 @@
         2. When the visitor is logged in, clicking the logo is always directing the user to the collection/home page.    
         
         
-    3. As a First Time Visitor, I want to easily be able to add new records.
+    3. As a First Time Visitor, I want to easily be able to add new films.
         1. Once the visitor access the site with a new profile, the user can easily find the link "Add Film" in the navigation bar and start to compose his collection.
         2. On the "Add Film" Page, after the form response is submitted, the page refreshes and the user is brought to his collection/home page and a flash message on the top of the page is displayed and saying: "Film Successfully Added".
         
@@ -31,12 +31,12 @@
 
         1. Once the visitor is logged in, he only need to click on a collapsible-header that contain a film and the expandable area will display the hidden informations of that  film.
         
-    2. As a Returning Visitor, I want to easily be able to filter one or more specific film that I'm searching.
+    2. As a Returning Visitor, I want to easily be able to filter one or more specific film that I'm looking for.
 
         1. Once the visitor is logged in, on the top of the collection page the user can find the search bar as first content available.
         2. The search bar is the perfect tool to filter the user research. The research could be based on the film title, or only one word contained in it.
 
-    3. As a Returning Visitor, I want to easily be able to update or cancel an exsisting film.
+    3. As a Returning Visitor, I want to easily be able to update or cancel an exsisting record.
         1. In the collection page, every film is displayed with 2 buttons: edit and delete. 
         2. The edit button direct the user to the "Edit Film" page. Here the user has the opportunity to update the informations contained in the record.
         3. After the form response is submitted, the page refreshes and the user is brought to his collection/home page and a flash message on the top of the page is displayed and saying: "Film Successfully Updated".
