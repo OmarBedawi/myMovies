@@ -64,7 +64,7 @@ This project makes use of:
 * [JavaScript] - Used to make the web app interactive.
 * [Python](https://www.python.org) - Used to build the functions of every html page
 * [Mongo DB](https://www.mongodb.com) - Mongo DB is a document-oriented database program. Used to store all the films and users of the application.
-* [Heroku](https://www.heroku.com) - Heroku is a container-based cloud Platform. Used to deploy the application and create the domain.
+
 
 
 ### Libraries    
@@ -92,6 +92,7 @@ This project makes use of:
 * [Gitpod](https://www.gitpod.io/) - Used as IDE for this project.
 * [Git](https://git-scm.com/) - Used for Version Control
 * [GitHub](https://github.com/) - Used to host repository and live website.
+* [Heroku](https://www.heroku.com) - Heroku is a container-based cloud Platform. Used to deploy the application and create the domain.
 * [Am I Responsive](http://ami.responsivedesign.is/) - Used for testing purposes as well as creating the image to display the web pages on different devices.
 * [W3 Html validator](https://validator.w3.org/) - Used to test and validate my html code.
 * [W3 Css validator](https://jigsaw.w3.org/) - Used to test and validate my css code.
@@ -125,7 +126,7 @@ Testing information can be found [here](static/readMe_files/testing/testing.md).
 
 ### Known Bugs
 
--   The console is displaying an Error 404 (favicon.ico:1) but I can't locate the error itself. 
+-   The console is displaying an Error 404 (favicon.ico:1) but I can't locate the error itself. However, this error is not interfering with the code.
 
 
 
