@@ -122,6 +122,13 @@ Testing information can be found [here](static/readMe_files/testing/testing.md).
 
 
 
+
+### Known Bugs
+
+-   The console is displaying an Error 404 (favicon.ico:1) but I can't locate the error itself. 
+
+
+
 ## Deployment
 
 This web app was developed in Gitpod and pushed to the remote repository, GitHub. The live page is hosted on GitHub Pages.
