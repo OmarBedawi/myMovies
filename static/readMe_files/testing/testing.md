@@ -46,7 +46,10 @@
         1. Once the visitor is logged in, on the top of the collection page the user can find the search bar as first content available.
         2. The search bar is the perfect tool to filter the user research. The research could be based on the film title, or only one word contained in it.
         
+        
         ![search](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/06_search.png?raw=true)
+        
+        
 
     3. As a Returning Visitor, I want to easily be able to update or cancel an exsisting record.
         1. In the collection page, every film is displayed with 2 buttons: edit and delete. 
