@@ -58,13 +58,14 @@ def get_films():
             )["username"]
         except:
             pass
-    return render_template("my_films.html", films=films)
+    return render_template("my_films.html", films=films, username=session["user"])
     
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    user_id = mongo.db.users.find_one({"username": session["user"]})["_id"]
     query = request.form.get("query")
-    films = list(mongo.db.films.find({"$text": {"$search": query}}).sort("title"))
+    films = list(mongo.db.films.find({"$text": {"$search": query}, "created_by": user_id}).sort("title"))
     for film in films:
         try:
             film["created_by"] = mongo.db.users.find_one(

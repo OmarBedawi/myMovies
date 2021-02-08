@@ -23,7 +23,7 @@ body {
 }
 
 
-/*--------------------------------------------------------------- index page*/
+/*-------------------------------------------------------------My films page*/
 
 .btn-small {
     margin: 5px;
@@ -165,3 +165,16 @@ body {
         width: 65%;
     }
 }    
+
+
+@media (min-width: 200px) and (max-width: 368px) {
+    .xs {
+        color: red;
+        font-weight: bold;
+    }
+
+    .login_collap{
+        display: inline-block;
+        width: 100%;
+    }
+}
