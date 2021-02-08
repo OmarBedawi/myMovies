@@ -38,7 +38,11 @@
     1. As a Returning Visitor, I want to have easy and fast access to the film's informations.
 
         1. Once the visitor is logged in, he only need to click on a collapsible-header that contain a film title and the expandable area will display the hidden informations of that  film.
+        
+        
+        
         ![expand](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/05_expand.png?raw=true)
+        
         
         
     2. As a Returning Visitor, I want to easily be able to filter one or more specific film that I'm looking for.
