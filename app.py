@@ -135,6 +135,7 @@ def add_film():
             "collection_id": request.form.get("collection_id"),
             "wiki": request.form.get("wiki"),
             "created_by": ObjectId(user["_id"]),
+            "cover": request.form.get("cover"),
         }
         mongo.db.films.insert_one(film)
         flash("Film Successfully Added")
@@ -153,6 +154,7 @@ def edit_film(film_id):
             "collection_id": request.form.get("collection_id"),
             "wiki": request.form.get("wiki"),
             "created_by": ObjectId(user["_id"]),
+            "cover": request.form.get("cover"),
         }
         mongo.db.films.update({"_id": ObjectId(film_id)}, submit)
         flash("Film Successfully Updated")

@@ -51,47 +51,19 @@
             </div>
         </div>
 
-
-
-        <!-- cover label-->
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-images prefix light-blue-text text-darken-4"></i>
-                <input id="cover" name="cover" minlength="1" maxlength="500"
-                    value="{{ film.cover }}" type="text" class="validate">
-                <label for="cover">Cover</label>
-                <div class="uploadprevie cover">
-      <img src="{{ film.cover }}" alt="cover" class="add-edit_img">
-  </div>
-                
-            </div>
-            
-        </div>
-        <!-- cover image label
-<div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-images prefix light-blue-text text-darken-4"></i>
-                <input id="cover" name="cover" minlength="1" maxlength="400"
-                    value="{{ film.cover }}" type="text" class="validate">
-                <label for="wiki">Cover's Link</label>
-            </div>
-        </div>
-
+        <!-- cover image label-->
 
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-images prefix light-blue-text text-darken-4"></i>
                 <div class="upload-wrap">
-                    <label class="upload_cover" for="cover">Upload Cover</label>
-  <div class="uploadpreview cover">
-      <img src="{{ film.cover }}" alt="cover" class="add-edit_img">
-  </div>
-  <input id="cover" value="{{ film.cover }}" type="text" name="cover" class="materialize-textarea validate">
-
+                    <label class="upload_cover light-blue-text text-darken-4" for="cover">Upload Cover</label>
+  <div class="uploadpreview cover"></div>
+  <input id="cover" value="{{ film.cover }}" type="file" accept="cover/*">
 </div>
                 
             </div>
-        </div>-->
+        </div>
         <!-- submit button -->
         <div class="row">
             <div class="col s12 center-align">
