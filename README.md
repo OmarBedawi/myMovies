@@ -62,7 +62,7 @@ This project makes use of:
 * [JavaScript] - Used to make the web app interactive.
 * [Python](https://www.python.org) - Used to build the functions of every html page
 * [Mongo DB](https://www.mongodb.com) - Mongo DB is a document-oriented database program. Used to store all the films and users of the application.
-
+* [Jinja Template](https://jinja.palletsprojects.com/) - Jinja is a web template engine for the Python programming language
 
 
 ### Libraries    
@@ -116,30 +116,30 @@ Testing information can be found [here](static/readMe_files/testing/testing.md).
 
 ### Known Bugs
 
--   The console is displaying an Error 404 (favicon.ico:1) but I can't locate the error itself. However, this error is not interfering with the code.
+-   The console is displaying an Error 404 (favicon.ico:1) but after a deep research I can't locate the error is about. However, this error is not interfering with the functionality of the code.
 
 ## Deployment
 
-This web app was developed in Gitpod and pushed to the remote repository, GitHub. The live page is hosted on GitHub Pages.
+This web app was developed in Gitpod and pushed to the remote repository, Heroku. The live page is hosted on Heroku Pages.
 
-### Used commands during deployment:
+### Used commands during committing in Gitpod:
 
 * git add -A - to add the files to the staging area.
 * git commit -m "text message here" - to commit the files.
 * git push - to push to origin master branch on to GitHub.
 * git status - to see the current status of the files.
 
-### GitHub Pages
+### Heroku Pages
 
-The project was deployed to GitHub Pages using the following steps...
+The project was pushed to Heroku Pages. 
 
-1. Log in to GitHub and choose [myMovies](https://github.com/OmarBedawi/myMovies).
+
+To locatet the link project use the following steps...
+
+1. Log in to Heroku and choose [myMovies](https://dashboard.heroku.com/apps/my-first-heroku-for-movies).
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](http://my-first-heroku-for-movies.herokuapp.com/login) in the "GitHub Pages" section.
+3. Scroll down the Settings page until you locate the "Domains" Section.
+4. On the right side of the page is locate the app [link](http://my-first-heroku-for-movies.herokuapp.com/login).
 
 ### Forking the GitHub Repository
 
