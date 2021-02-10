@@ -45,53 +45,23 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-external-link-alt prefix light-blue-text text-darken-4"></i>
-                <input id="wiki" name="wiki" minlength="1" maxlength="200"
+                <input id="wiki" name="wiki" minlength="1" maxlength="500"
                     value="{{ film.wiki }}" type="text" class="validate">
                 <label for="wiki">Wikipedia Link</label>
             </div>
         </div>
-
-
-
         <!-- cover label-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-images prefix light-blue-text text-darken-4"></i>
                 <input id="cover" name="cover" minlength="1" maxlength="500"
                     value="{{ film.cover }}" type="text" class="validate">
-                <label for="cover">Cover</label>
+                <label for="cover">Cover's Link</label>
                 <div class="uploadprevie cover">
-      <img src="{{ film.cover }}" alt="cover" class="add-edit_img">
-  </div>
-                
-            </div>
-            
-        </div>
-        <!-- cover image label
-<div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-images prefix light-blue-text text-darken-4"></i>
-                <input id="cover" name="cover" minlength="1" maxlength="400"
-                    value="{{ film.cover }}" type="text" class="validate">
-                <label for="wiki">Cover's Link</label>
+                    <img src="{{ film.cover }}" alt="cover" class="add-edit_img">
+                </div>
             </div>
         </div>
-
-
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="fas fa-images prefix light-blue-text text-darken-4"></i>
-                <div class="upload-wrap">
-                    <label class="upload_cover" for="cover">Upload Cover</label>
-  <div class="uploadpreview cover">
-      <img src="{{ film.cover }}" alt="cover" class="add-edit_img">
-  </div>
-  <input id="cover" value="{{ film.cover }}" type="text" name="cover" class="materialize-textarea validate">
-
-</div>
-                
-            </div>
-        </div>-->
         <!-- submit button -->
         <div class="row">
             <div class="col s12 center-align">

@@ -40,12 +40,10 @@
         <div class="collapsible-body">
             <img class="collap_img" src="{{ film.cover }}" alt="cover">
             <strong>Genre: {{ film.genre }}</strong>
-            
             <p>Year: {{ film.year }}</p>
             <p>Collection ID: {{ film.collection_id }}</p>
             <p><a target="_blank" href="{{ film.wiki }}">Wikipedia Link</a></p>
-<!--        <p><em>Added by: {{ film.created_by }}</em></p>   -->
-            
+            <!--        <p><em>Added by: {{ film.created_by }}</em></p>   -->
         </div>
     </li>
     {% endfor %}
