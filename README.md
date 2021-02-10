@@ -7,7 +7,7 @@
 
 This is the source code of the Film's Archive Application. 
 
-To see it in action just click this [link](http://my-first-heroku-for-movies.herokuapp.com/login).
+To see it in action just click this [link](http://my-first-heroku-for-movies.herokuapp.com/).
 
 
 ## User Experience (UX)
@@ -33,7 +33,7 @@ To see it in action just click this [link](http://my-first-heroku-for-movies.her
         
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are blue, and white.
+        -   The two main colours used are blue, and light grey.
     
     -   #### Imagery
         -   Imagery is important. The background image with all the film covers is designed to be striking and catch the user's attention and let him understand what is the topic of the website. 
@@ -62,7 +62,7 @@ This project makes use of:
 * [JavaScript] - Used to make the web app interactive.
 * [Python](https://www.python.org) - Used to build the functions of every html page
 * [Mongo DB](https://www.mongodb.com) - Mongo DB is a document-oriented database program. Used to store all the films and users of the application.
-
+* [Jinja Template](https://jinja.palletsprojects.com/) - Jinja is a web template engine for the Python programming language
 
 
 ### Libraries    
@@ -109,6 +109,9 @@ Testing information can be found [here](static/readMe_files/testing/testing.md).
 ## Code Validation
 * I used the [W3 Html validator](https://validator.w3.org/) service to validate my html code.
 
+    -   #### All html files passes succesfully through the check by address validator.
+    -   #### The my_film.html file has been validate by the source code of the page.
+
 * I used the [W3 Css validator](https://jigsaw.w3.org/) service to validate my css code.
 
 * I used the [JSHint](https://jshint.com/) service to validate my javascript code.
@@ -116,30 +119,30 @@ Testing information can be found [here](static/readMe_files/testing/testing.md).
 
 ### Known Bugs
 
--   The console is displaying an Error 404 (favicon.ico:1) but I can't locate the error itself. However, this error is not interfering with the code.
+-   The console is displaying an Error 404 (favicon.ico:1) but after a deep research I can't understand what the error is about. However, this error is not interfering with the functionality of the code.
 
 ## Deployment
 
-This web app was developed in Gitpod and pushed to the remote repository, GitHub. The live page is hosted on GitHub Pages.
+This web app was developed in Gitpod and pushed to the remote repository, Heroku. The live page is hosted on Heroku Pages.
 
-### Used commands during deployment:
+### Used commands during committing in Gitpod:
 
 * git add -A - to add the files to the staging area.
 * git commit -m "text message here" - to commit the files.
 * git push - to push to origin master branch on to GitHub.
 * git status - to see the current status of the files.
 
-### GitHub Pages
+### Heroku Pages
 
-The project was deployed to GitHub Pages using the following steps...
+The project was pushed to Heroku Pages. 
 
-1. Log in to GitHub and choose [myMovies](https://github.com/OmarBedawi/myMovies).
+
+To locate the link project use the following steps:
+
+1. Log in to Heroku and choose [myMovies](https://dashboard.heroku.com/apps/my-first-heroku-for-movies).
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](http://my-first-heroku-for-movies.herokuapp.com/login) in the "GitHub Pages" section.
+3. Scroll down the Settings page until you locate the "Domains" Section.
+4. On the right side of the page you can find the app [link](http://my-first-heroku-for-movies.herokuapp.com/).
 
 ### Forking the GitHub Repository
 
@@ -149,29 +152,6 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
-### Making a Local Clone
-
-1. Log in to GitHub and choose [myMovies](https://github.com/OmarBedawi/myMovies).
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
-
-```
-$ git clone https://github.com/OmarBedawi/myMovies
-```
-
-7. Press Enter. Your local clone will be created.
-
-```
-$ git clone https://github.com/OmarBedawi/myMovies
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
 
 
 ## Credits
