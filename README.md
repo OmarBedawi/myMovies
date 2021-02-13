@@ -109,12 +109,12 @@ Testing information can be found [here](static/readMe_files/testing/testing.md).
 ## Code Validation
 * I used the [W3 Html validator](https://validator.w3.org/) service to validate my html code.
 
-    -   #### All html files passes succesfully through the check by address validator.
-    -   #### The my_film.html file has been validate by the source code of the page.
+    -   #### All html files passes succesfully through the 'check by address' validator.
+    -   #### The "my_film.html" file has been validate by the source code of the page.
 
-* I used the [W3 Css validator](https://jigsaw.w3.org/) service to validate my css code.
+* I used the [W3 Css validator](https://jigsaw.w3.org/) service to validate my Css code.
 
-* I used the [JSHint](https://jshint.com/) service to validate my javascript code.
+* I used the [JSHint](https://jshint.com/) service to validate my JavaScript code.
 
 
 ### Known Bugs
@@ -123,7 +123,7 @@ Testing information can be found [here](static/readMe_files/testing/testing.md).
 
 ## Deployment
 
-This web app was developed in Gitpod and pushed to the remote repository, Heroku. The live page is hosted on Heroku Pages.
+This web app was developed in Gitpod and deployed to the remote repository, Heroku. 
 
 ### Used commands during committing in Gitpod:
 
@@ -134,7 +134,7 @@ This web app was developed in Gitpod and pushed to the remote repository, Heroku
 
 ### Heroku Pages
 
-The project was pushed to Heroku Pages. 
+The project was deployed to Heroku Pages. 
 
 
 To locate the link project use the following steps:
@@ -142,7 +142,7 @@ To locate the link project use the following steps:
 1. Log in to Heroku and choose [myMovies](https://dashboard.heroku.com/apps/my-first-heroku-for-movies).
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "Domains" Section.
-4. On the right side of the page you can find the app [link](http://my-first-heroku-for-movies.herokuapp.com/).
+4. On the right side of the page you can find the project [link](http://my-first-heroku-for-movies.herokuapp.com/).
 
 ### Forking the GitHub Repository
 
