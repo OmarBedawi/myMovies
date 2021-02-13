@@ -134,7 +134,16 @@ This web app was developed in Gitpod and deployed to the remote repository, Hero
 
 ### Heroku Pages
 
-The project was deployed to Heroku Pages. 
+The project was deployed to Heroku Pages with the following steps:
+
+1. Create a requirements.txt file using the terminal command pip freeze > requirements.txt
+2. Create a Procfile with the terminal command echo web: python app.py > Procfile
+3. Git add and git commit the new requirements and Procfile and then git push the project to GitHub
+4. Create a new app on the Heroku website by clicking the "New" button in your dashboard. Give it a name and set the region to Europe
+5. From the Heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub
+6. Confirm the linking of the Heroku app to the correct GitHub repository
+7. In the Heroku dashboard for the application, click on "Setting" > "Reveal Config Vars"
+8. In the "Reveal Config Vars" set IP, MONGO_URI, PORT and SECRET_KEY.
 
 
 To locate the link project use the following steps:
@@ -152,7 +161,15 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
+### Making a Local Clone
 
+1. Log in to GitHub and choose [myMovies](https://github.com/OmarBedawi/myMovies).
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+7. Press Enter. Your local clone will be created.
 
 ## Credits
 ### Content
