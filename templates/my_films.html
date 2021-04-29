@@ -38,7 +38,11 @@
         </div>
         <!-- expandable area-->
         <div class="collapsible-body">
+        {% if film.cover %}
             <img class="collap_img" src="{{ film.cover }}" alt="cover">
+        {% else %}
+            <img class="collap_img" src="static/images/noimage.png" alt="cover">
+        {% endif %}
             <strong>Genre: {{ film.genre }}</strong>
             <p>Year: {{ film.year }}</p>
             <p>Collection ID: {{ film.collection_id }}</p>
