@@ -1,5 +1,5 @@
 import os
-from flask import Flask, flash, render_template, redirect, request, session, url_for
+from flask import Flask, flash, render_template, redirect, request, session, url_for  # noqa: disable=line-too-long
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -46,7 +46,20 @@ def login():
 
     return render_template("index.html")
 
-    
+
+@app.route("/all_films")
+def all_films():
+    films = list(mongo.db.films.find().sort("title"))
+    for film in films:
+        try:
+            film["created_by"] = mongo.db.users.find_one(
+                {"_id": ObjectId(film["created_by"])}
+            )["username"]
+        except:
+            pass
+    return render_template("all_films.html", films=films)
+
+
 @app.route("/get_films")
 def get_films():
     user_id = mongo.db.users.find_one({"username": session["user"]})["_id"]
@@ -58,14 +71,14 @@ def get_films():
             )["username"]
         except:
             pass
-    return render_template("my_films.html", films=films, username=session["user"])
-    
+    return render_template("my_films.html", films=films, username=session["user"])  # noqa: disable=line-too-long
+
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
     user_id = mongo.db.users.find_one({"username": session["user"]})["_id"]
     query = request.form.get("query")
-    films = list(mongo.db.films.find({"$text": {"$search": query}, "created_by": user_id}).sort("title"))
+    films = list(mongo.db.films.find({"$text": {"$search": query}, "created_by": user_id}).sort("title"))  # noqa: disable=line-too-long
     for film in films:
         try:
             film["created_by"] = mongo.db.users.find_one(
@@ -102,13 +115,10 @@ def register():
     return render_template("register.html")
 
 
-
-
-
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from db
-    username = mongo.db.users.find_one({"username": session["user"]})["username"]
+    username = mongo.db.users.find_one({"username": session["user"]})["username"]  # noqa: disable=line-too-long
 
     if session["user"]:
         return render_template("profile.html", username=username)
@@ -173,4 +183,4 @@ def delete_film(film_id):
 
 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=True)
+    app.run(host=os.environ.get("IP"), port=int(os.environ.get("PORT")), debug=True)  # noqa: disable=line-too-long

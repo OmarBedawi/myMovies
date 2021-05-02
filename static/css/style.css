@@ -120,11 +120,11 @@ input:not(:checked) ~ label:hover ~ label{
 }
 input:checked ~ label{
   color: #fd4;
-}
+}/*
 input#rate-5:checked ~ label{
   color: #fe7;
   text-shadow: 0 0 20px #952;
-}
+}*/
 #rate-1:checked ~ form header:before{
   content: "I just hate it 😠";
 }
@@ -161,6 +161,7 @@ form .textarea textarea{
   height: 71px;
   width: 96%;
   resize: none;
+  background-color: rgba(68, 68, 68, 0.445);
 }  
 
 form .textarea{
