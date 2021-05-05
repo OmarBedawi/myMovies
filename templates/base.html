@@ -43,7 +43,8 @@
                     <h4 class="center-align light-blue-text text-darken 4">Film's Archive</h4>
                 </li>
                 {% if session.user %}
-                <li><a href="{{ url_for('get_films') }}">Home</a></li>
+                <li><a href="{{ url_for('all_films') }}">All Films</a></li>
+                <li><a href="{{ url_for('get_films') }}">My Films</a></li>
                 <li><a href="{{ url_for('add_film') }}">Add Film</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                 {% else %}

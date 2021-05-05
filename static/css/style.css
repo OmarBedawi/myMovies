@@ -318,10 +318,10 @@ input[type="file"] {
     }
     .film {
         display: none;
-    }
+    }/*
     .butt_film {
         float: right;
-    }
+    }*/
     
 }
 
@@ -332,10 +332,10 @@ input[type="file"] {
     }
     .coll_login{
     width: 94%;
-    }
+    }/*
     .butt_film {
         float: right;
-    }
+    }*/
 }
 
 @media (min-width: 768px) and (max-width:991px) {

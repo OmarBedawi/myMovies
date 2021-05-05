@@ -3,6 +3,7 @@ from flask import Flask, flash, render_template, redirect, request, session, url
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
+from flask import json
 
 if os.path.exists("env.py"):
     import env
@@ -71,14 +72,17 @@ def get_films():
             )["username"]
         except:
             pass
+        try:
+            film["comments"] = list(film["comments"])
+        except KeyError:
+            film["comments"] = []
     return render_template("my_films.html", films=films, username=session["user"])  # noqa: disable=line-too-long
 
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
-    user_id = mongo.db.users.find_one({"username": session["user"]})["_id"]
     query = request.form.get("query")
-    films = list(mongo.db.films.find({"$text": {"$search": query}, "created_by": user_id}).sort("title"))  # noqa: disable=line-too-long
+    films = list(mongo.db.films.find({"$text": {"$search": query}}).sort("title"))  # noqa: disable=line-too-long
     for film in films:
         try:
             film["created_by"] = mongo.db.users.find_one(
@@ -86,7 +90,7 @@ def search():
             )["username"]
         except:
             pass
-    return render_template("my_films.html", films=films)
+    return render_template("all_films.html", films=films)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -142,7 +146,6 @@ def add_film():
             "title": request.form.get("title"),
             "genre": request.form.get("genre"),
             "year": request.form.get("year"),
-            "collection_id": request.form.get("collection_id"),
             "wiki": request.form.get("wiki"),
             "created_by": ObjectId(user["_id"]),
             "cover": request.form.get("cover"),
@@ -161,7 +164,6 @@ def edit_film(film_id):
             "title": request.form.get("title"),
             "genre": request.form.get("genre"),
             "year": request.form.get("year"),
-            "collection_id": request.form.get("collection_id"),
             "wiki": request.form.get("wiki"),
             "created_by": ObjectId(user["_id"]),
             "cover": request.form.get("cover"),
@@ -180,6 +182,37 @@ def delete_film(film_id):
     mongo.db.films.remove({"_id": ObjectId(film_id)})
     flash("Film Successfully Deleted")
     return redirect(url_for("get_films"))
+
+
+@app.route("/comment", methods=["POST"])
+def comment():
+    if request.method == "POST":
+        user = mongo.db.users.find_one({"username": session["user"]})
+        film_id = request.form.get('id')
+        comment = request.form.get('comment')
+        film = mongo.db.films.find_one({"_id": ObjectId(film_id)})
+        try:
+            current_comments = film['comments']
+        except KeyError:
+            current_comments = []
+        new_comment = {'text': comment, 'author': user.get('username')}
+        current_comments.append(new_comment)
+        update = {
+            "title": film.get("title"),
+            "genre": film.get("genre"),
+            "year": film.get("year"),
+            "wiki": film.get("wiki"),
+            "created_by": film.get("created_by"),
+            "cover": film.get("cover"),
+            "comments": current_comments
+        }
+        mongo.db.films.update({"_id": ObjectId(film_id)}, update)
+        response = app.response_class(
+            response=json.dumps(new_comment),
+            status=200,
+            mimetype='application/json'
+        )
+        return response
 
 
 if __name__ == "__main__":
