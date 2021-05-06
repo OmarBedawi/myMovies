@@ -80,7 +80,7 @@ body {
 /*--------------------------------------------------------star rating system*/
 
 
-.star-system {
+.form_comment {
   position: relative;/*
   width: 400px;
   background: #111;
@@ -95,10 +95,11 @@ body {
 .star-system .post{
   display: none;
 }*/
-.star-system .text{/*
+.form_comment .text{/*
   font-size: 25px;
   color: #666;*/
   font-weight: 500;
+  margin-bottom: 15px;
 }
 
 /*
@@ -174,7 +175,23 @@ form button {
     margin-bottom: 5px;
 }
 
+.comment_author {
+    font-weight: 700;
+}
 
+.comment_text {
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.remove_comment {
+    height: 1.8rem;
+}
+
+.remove_comment_text {
+    font-size: .6rem;
+}
 /*
 form .textarea textarea{
   height: 100%;

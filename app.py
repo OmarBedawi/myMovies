@@ -212,7 +212,18 @@ def comment():
             status=200,
             mimetype='application/json'
         )
+        flash("Comment Successfully Added")
         return response
+
+
+"""
+@app.route("/delete_comment/<current_comments>")
+def delete_comment(current_comments):
+    Array = mongo.db.films.comments
+    mongo.db.films.remove({"comments": current_comments(Array)})
+    flash("Comment Successfully Deleted")
+    return redirect(url_for("get_films"))
+"""
 
 
 if __name__ == "__main__":
