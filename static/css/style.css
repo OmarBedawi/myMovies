@@ -23,42 +23,17 @@ body {
 }
 
 
-/*-------------------------------------------------------------My films page*/
-/*
-.btn-small {
-    margin: 5px;
-}
-
-.collapsible-header .col strong {
-    margin: 5px;
-    line-height: 42px;
-}
-
-.collapsible_background {
-    background-color: azure;
-}
-
-.butt_film {
-    margin-left: auto;
-    margin-right: 0;
-}
-
-.center-align {
-    color: white;
-    font-weight: 600;
-}
-
-*/
+/*-------------------------------------------------------------My films/All films page*/
 
 .card {
     height: 450px;
 }
 
-.card .card-image{
+.card .card-image {
     height: 250px;
 }
 
-.card .card-image img{
+.card .card-image img {
     width: 100%;
     height: 100%;
 }
@@ -66,112 +41,45 @@ body {
 .butt_film {
     margin-top: 20px;
     padding-top: 40px;
-       
 }
 
 .border {
     border-bottom: black solid 1px;
 }
 
-.rating {
-    margin-top: 30px;
-}
 
-/*--------------------------------------------------------star rating system*/
-
+/*--------------------------------------------------------comment section*/
 
 .form_comment {
-  position: relative;/*
-  width: 400px;
-  background: #111;
-  padding: 20px 30px;*/
-  border: 1px solid #444;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}/*
-.star-system .post{
-  display: none;
-}*/
-.form_comment .text{/*
-  font-size: 25px;
-  color: #666;*/
-  font-weight: 500;
-  margin-bottom: 15px;
+    margin-top: 30px;
+    position: relative;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-/*
-.star-system .star-widget input{
-  display: none;
-}*/
-.star-widget label{
-  font-size: 15px;
-  color: #444;
-  padding: 5px;
-  padding-top: 10px;
-  padding-bottom: 18px;
-  float: right;
-  transition: all 0.2s ease;
-}
-input:not(:checked) ~ label:hover,
-input:not(:checked) ~ label:hover ~ label{
-  color: #fd4;
-}
-input:checked ~ label{
-  color: #fd4;
-}/*
-input#rate-5:checked ~ label{
-  color: #fe7;
-  text-shadow: 0 0 20px #952;
-}*/
-#rate-1:checked ~ form header:before{
-  content: "I just hate it 😠";
-}
-#rate-2:checked ~ form header:before{
-  content: "I don't like it 😒";
-}
-#rate-3:checked ~ form header:before{
-  content: "It is awesome 😄";
-}
-#rate-4:checked ~ form header:before{
-  content: "I just like it 😎";
-}
-#rate-5:checked ~ form header:before{
-  content: "I just love it 😍";
-}/*
-.container form{
-  display: none;
-}*/
-input:checked ~ form{
-  display: block;
-}
-/*
-form header {
-  width: 100%;
-  font-size: 25px;
-  color: #fe7;
-  font-weight: 500;
-  margin: 5px 0 20px 0;
-  text-align: center;
-  transition: all 0.2s ease;
-}*/
-
-form .textarea textarea{
-  height: 71px;
-  width: 96%;
-  resize: none;
-  background-color: rgba(68, 68, 68, 0.445);
-}  
-
-form .textarea{
-  height: 71px;
-  width: 100%;
-  overflow: hidden;
+.form_comment .text {
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
-form button {
+form .textarea textarea {
+    height: 71px;
+    width: 96%;
+    resize: none;
+    background-color: rgba(68, 68, 68, 0.445);
+}
+
+form .textarea {
+    height: 71px;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .comment_submit {
     margin-bottom: 5px;
 }
 
@@ -182,7 +90,6 @@ form button {
 .comment_text {
     margin-left: 5px;
     margin-right: 5px;
-
 }
 
 .remove_comment {
@@ -192,100 +99,9 @@ form button {
 .remove_comment_text {
     font-size: .6rem;
 }
-/*
-form .textarea textarea{
-  height: 100%;
-  width: 100%;
-  outline: none;
-  color: #eee;
-  border: 1px solid #333;
-  background: #222;
-  padding: 10px;
-  font-size: 17px;
-  resize: none;
-}
-.textarea textarea:focus{
-  border-color: #444;
-}
-form .btn{
-  height: 45px;
-  width: 100%;
-  margin: 15px 0;
-}
-form .btn button{
-  height: 100%;
-  width: 100%;
-  border: 1px solid #444;
-  outline: none;
-  background: #222;
-  color: #999;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-form .btn button:hover{
-  background: #1b1b1b;
-}
-*/
 
 
-/*-------------------------------------------------------------add film page*/
-
-.required {
-    color: red;
-}
-
-
-/*--------------------------------------------------------------profile page*/
-
-.profile_card {
-    margin-top: 70px;
-}
-
-/*----------------------------------------------------------------login page*/
-
-
-.coll_login{
-    width: 65%;
-    margin: auto;
-    margin-top: 40px;
-    background: azure;
-}
-
-.coll_title{
-    font-weight: 700;
-    font-size: 18px;
-}  
-.coll_border{
-    border: solid 2px #76ff03;
-}  
-
-/*---------------------------------------------------------------------cover*/
-
-.uploadpreview{
-  width:150px;
-  height:112px;
-  display:block;
-  border:1px solid #ccc;
-  margin:16px 10px auto 25px;
-  background-size:100% auto;
-  background-repeat:no-repeat;
-  background-position:center;
-}
-
-.upload-wrap{
-  float: left;
-  margin-left: 23px;
-  width:200px;
-}
-
-.upload_cover{
-    font-weight: 600;
-    margin-left: 25px;
-    font-size: 18px;
-}
+/*------------------------------------------------------------edit film page*/
 
 input[type="file"] {
     color: transparent;
@@ -294,22 +110,34 @@ input[type="file"] {
     display: block;
 }
 
-.collap_img{
-    float: right;
-    border: 1px black solid;
-    width: 220px;
-    height: 280px;
-    
-}
-
-.add-edit_img{
+.add-edit_img {
     border: 1px black solid;
     width: 220px;
     height: 150px;
     margin: auto;
     margin-left: 45px;
-    
 }
+
+
+/*----------------------------------------------------------------login page*/
+
+.coll_login {
+    width: 65%;
+    margin: auto;
+    margin-top: 40px;
+    background: azure;
+}
+
+.coll_title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.coll_border {
+    border: solid 2px #76ff03;
+}
+
+
 /*----------------------------------------------------------------------------------------smaller screens*/
 
 @media (min-width: 200px) and (max-width: 549px) {
@@ -317,12 +145,8 @@ input[type="file"] {
         color: red;
         font-weight: bold;
     }
-    .coll_login{
-    width: 94%;
-    }
-    .butt_film_small {
-        display: inline-block;
-        width: 100%;
+    .coll_login {
+        width: 94%;
     }
     .search_butt {
         display: inline-block;
@@ -335,11 +159,7 @@ input[type="file"] {
     }
     .film {
         display: none;
-    }/*
-    .butt_film {
-        float: right;
-    }*/
-    
+    }
 }
 
 @media (min-width: 550px) and (max-width:768px) {
@@ -347,18 +167,20 @@ input[type="file"] {
         color: red;
         font-weight: bold;
     }
-    .coll_login{
-    width: 94%;
-    }/*
-    .butt_film {
-        float: right;
-    }*/
+    .coll_login {
+        width: 94%;
+    }
 }
 
-@media (min-width: 768px) and (max-width:991px) {
+@media (min-width: 768px) and (max-width:992px) {
     .md {
         color: red;
         font-weight: bold;
+    }
+    .columnMD {
+        width: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
@@ -382,7 +204,6 @@ input[type="file"] {
         display: inline-block;
         width: 100%;
     }
-    
 }
 
 @media (min-width: 600px) and (max-width:768px) {
@@ -390,39 +211,18 @@ input[type="file"] {
         color: red;
         font-weight: bold;
     }
-
-    .coll_login{
+    .coll_login {
         width: 65%;
     }
-}    
-
+}
 
 @media (min-width: 200px) and (max-width: 368px) {
     .xs {
         color: red;
         font-weight: bold;
     }
-
-    .login_collap{
+    .login_collap {
         display: inline-block;
         width: 100%;
     }
-}
-
-
-@media (min-width: 200px) and (max-width: 500px) {
-    .xs {
-        color: red;
-        font-weight: bold;
-    }
-
-    .collap_img{
-    float: right;
-    border: 1px black solid;
-    width: 50%;
-    height: 150px;
-    
-}
-
-
 }

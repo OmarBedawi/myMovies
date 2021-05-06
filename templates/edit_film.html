@@ -48,8 +48,8 @@
                 <input id="cover" name="cover" minlength="1" maxlength="500"
                     value="{{ film.cover }}" type="text" class="validate">
                 <label for="cover">Cover's Link</label>
-                <div class="uploadprevie cover">
-                    <img src="{{ film.cover }}" alt="cover" class="add-edit_img">
+                <div class="cover">
+                    <img src="{{ film.cover }}" alt="{{ film.title }}" class="add-edit_img">
                 </div>
             </div>
         </div>
