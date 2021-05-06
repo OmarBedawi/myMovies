@@ -46,12 +46,40 @@ The wireframes information can be found [here](static/readMe_files/wireframes/wi
 
 
 ## Features
+### Existing Features
+* #### Dynamic Search Bar 
+    * Films can be searched or filtered by title using the search bar.
+    * User need to type at least one word contained in the film's title.
+    * Number of results for searches is dynamically displayed on top of the page, just before the list of films.
 
--   Responsive on all device sizes
+* #### Cards Reveal
+    * Each film is contained in a reveal card, that is a card with front and back side.
+    * The front side shows a cover picture of the film followed by the title, the year and a link to direct the user to the wikipedia page of the film.
+    * The title can occupy only one line. If it is longer it will be truncate. If the wikipedia link is not added a short paragraph will say "Link Not Added".
+    * At the bottom of the card, if the film has been added by the user, the "edit" and "delete" buttons are displayed. If the film is added by another user, it will show the username of that user.
+    * The back side of the card is accessable by clicking on the image on the front side.
+    * The back side displays the full film's title and a comment section, where all the users can leave comment and opinion about that specific film.
 
--   Interactive elements
+* #### User Profile
+    * User have to create a profile, in order to be able to access the application.
 
+* #### Flash Messages 
+    * Throughout the site flash messages are used to give the user feedback, such as 
+    when a user logs in, logs out, adds, edit or delete a film.
 
+* #### Responsive Fixed Navbar
+    * The Navbar is fixed and always attached to the top of the page.
+    * When the screen size is less than 992px, a toggle menu appears on the top right corner of the screen.
+    * When the toggle is clicked, a sideNav appears on the right side of the page and displays the links to access the other pages of the site. 
+    * Logo text is always available on the top left corner. If clicked, redirects the user to the My Films page.
+  
+### Features Left to Implement
+* #### Star System Rating
+    * With more time, a nice 5 stars system rating will be added in the comment section.
+
+* #### Custom 404 Page 
+    * Fairly self explanatory, but this feature wasn't deemed necessary for the site to be deployed.
+  
 ## Technologies Used
 
 ### Languages Used
