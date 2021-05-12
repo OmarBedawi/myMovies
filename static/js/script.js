@@ -2,6 +2,16 @@
     jQuery for MaterializeCSS initialization
 */
 
+$(document).ready(function () {
+    $(".sidenav").sidenav({edge: "right"});
+    $(".collapsible").collapsible();
+});
+
+
+/*
+    jQuery for comments in card reveal
+*/
+
 
 $('.comment_submit').on('click', function(event){
     filmId = $(this).attr('data-film-id');
