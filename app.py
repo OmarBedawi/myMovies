@@ -56,7 +56,7 @@ def all_films():
             film["created_by"] = mongo.db.users.find_one(
                 {"_id": ObjectId(film["created_by"])}
             )["username"]
-        except:
+        except Exception:
             pass
     return render_template("all_films.html", films=films)
 
@@ -70,7 +70,7 @@ def get_films():
             film["created_by"] = mongo.db.users.find_one(
                 {"_id": ObjectId(film["created_by"])}
             )["username"]
-        except:
+        except Exception:
             pass
         try:
             film["comments"] = list(film["comments"])
@@ -88,7 +88,7 @@ def search():
             film["created_by"] = mongo.db.users.find_one(
                 {"_id": ObjectId(film["created_by"])}
             )["username"]
-        except:
+        except Exception:
             pass
     return render_template("all_films.html", films=films)
 
@@ -224,6 +224,20 @@ def delete_comment(current_comments):
     flash("Comment Successfully Deleted")
     return redirect(url_for("get_films"))
 """
+
+# Error Handling of 404 & 500
+
+
+@app.errorhandler(404)
+def page_error(error):
+    """Custom 404 error page displayed when captured"""
+    return render_template("404.html"), 404
+
+
+@app.errorhandler(500)
+def error_500(error):
+    """Custom 500 error page displayed when captured"""
+    return render_template("500.html"), 500
 
 
 if __name__ == "__main__":

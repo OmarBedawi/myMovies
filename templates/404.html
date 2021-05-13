@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- Error 404-->
+
+<div class="error404-image">
+	<div class="error404-text">
+		<h1>OOPS.... Something has gone wrong</h1>
+		<p class="error">Let's take you</p>
+
+		<!--Button-->
+
+			<a href="{{ url_for('login') }}" class="home-button btn btn-lg" role="button">Home
+				<i class="fas fa-home"></i></a>
+	</div>
+</div>
+
+
+{% endblock %}
