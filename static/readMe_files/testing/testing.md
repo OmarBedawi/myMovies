@@ -22,7 +22,7 @@
     2. As a First Time Visitor, I want to be able to easily navigate throughout the application to find content.
 
         1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. When the visitor is logged in, clicking the logo is always directing the user to the collection/home page.    
+        2. When the visitor is logged in, clicking the logo is always directing the user to his collection page.    
         
         
     3. As a First Time Visitor, I want to easily be able to add new films.
@@ -37,11 +37,13 @@
 
     1. As a Returning Visitor, I want to have easy and fast access to the film's informations.
 
-        1. Once the visitor is logged in, he only need to click on a collapsible-header that contain a film title and the expandable area will display the hidden informations of that  film.
-        
-        
-        
-        ![expand](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/05_expand.png?raw=true)
+        1. Once the visitor is logged in, he can see the films contained in cards reveal, a kind of card that has informations on the front and back side. The back side of the card is accessible by clicking on the image on the front side.
+        2. The card displays all the details that the user needs to know and a comment/feedback section.
+                
+         
+        ![card](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/05_card.png?raw=true)
+ 
+        ![card2](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/05.01_card.png?raw=true)
         
         
         
@@ -56,9 +58,9 @@
         
 
     3. As a Returning Visitor, I want to easily be able to update or cancel an exsisting record.
-        1. In the collection page, every film is displayed with 2 buttons: edit and delete. 
+        1. In the collection pages, only the films added by the user displays 2 buttons: edit and delete. 
         2. The edit button direct the user to the "Edit Film" page. Here the user has the opportunity to update the informations contained in the record.
-        3. After the form response is submitted, the page refreshes and the user is brought to his collection/home page and a flash message on the top of the page is displayed and saying: "Film Successfully Updated".
+        3. After the form response is submitted, the page refreshes and the user is brought to his collection and a flash message on the top of the page is displayed and saying: "Film Successfully Updated".
         4. The delete button gives the user the opportunity to delete a film. When the user click on the button, a message appears on the screen saying:"Are you sure to delete this film?"
         If the user click "Yes", a flash message on the top of the page is displayed and saying: "Film Successfully Deleted". 
         
