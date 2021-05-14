@@ -68,6 +68,15 @@ The wireframes information can be found [here](static/readMe_files/wireframes/wi
 * #### User Profile
     * User have to create a profile with username and password, in order to be able to access the application.
 
+* #### Add Film
+    * This offers the possibility for users to add new films to their collection.
+
+* #### Edit Film
+    * This offers the possibility for users to update their already existing films.
+
+* #### Delete Film
+    * This offers the possibility for users to delete films from their collection.
+
 * #### Flash Messages 
     * Throughout the site, flash messages are used to give the user feedback, such as 
     when a user logs in, logs out, adds, edit or delete a film.
@@ -156,6 +165,9 @@ Testing information can be found [here](static/readMe_files/testing/testing.md).
 
 -   The console is displaying an Error 404 (favicon.ico:1) but after a deep research I can't understand what the error is about. However, this error is not interfering with the functionality of the code.
 -   When the comments are added, the css properties are not loaded until the page is not refreshed.
+-   Some features are misplaced on smaller devices.
+-   The cover image has to be big size (at least a width of 700px) otherwise will look pixaleted.
+-   The cover image is a link image. Could happen that for some reason the link in not available anymore and need to be update.
 
 
 
