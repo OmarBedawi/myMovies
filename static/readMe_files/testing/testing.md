@@ -41,9 +41,7 @@
         2. The card displays all the details that the user needs to know and a comment/feedback section.
                 
          
-        ![card](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/05_card.png?raw=true)
- 
-        ![card2](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/05.01_card.png?raw=true)
+        ![card](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/05_card.png?raw=true)    &nbsp;&nbsp;&nbsp;&nbsp;           ![card2](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/05.01_card.png?raw=true)
         
         
         
