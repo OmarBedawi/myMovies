@@ -63,20 +63,25 @@ def all_films():
 
 @app.route("/get_films")
 def get_films():
-    user_id = mongo.db.users.find_one({"username": session["user"]})["_id"]
-    films = list(mongo.db.films.find({"created_by": user_id}).sort("title"))
-    for film in films:
-        try:
-            film["created_by"] = mongo.db.users.find_one(
-                {"_id": ObjectId(film["created_by"])}
-            )["username"]
-        except Exception:
-            pass
-        try:
-            film["comments"] = list(film["comments"])
-        except KeyError:
-            film["comments"] = []
-    return render_template("my_films.html", films=films, username=session["user"])  # noqa: disable=line-too-long
+    try:
+        user_id = mongo.db.users.find_one({"username": session["user"]})["_id"]
+        films = list(mongo.db.films.find({"created_by": user_id}).sort("title"))  # noqa: disable=line-too-long
+        for film in films:
+            try:
+                film["created_by"] = mongo.db.users.find_one(
+                    {"_id": ObjectId(film["created_by"])}
+                )["username"]
+            except Exception:
+                pass
+            try:
+                film["comments"] = list(film["comments"])
+            except KeyError:
+                film["comments"] = []
+        return render_template("my_films.html", films=films, username=session["user"])  # noqa: disable=line-too-long
+    except KeyError:
+        return redirect(url_for("login"))
+    except Exception:
+        raise
 
 
 @app.route("/search", methods=["GET", "POST"])
@@ -181,7 +186,7 @@ def edit_film(film_id):
 def delete_film(film_id):
     mongo.db.films.remove({"_id": ObjectId(film_id)})
     flash("Film Successfully Deleted")
-    return redirect(url_for("get_films"))
+    return redirect(request.referrer)
 
 
 @app.route("/comment", methods=["POST"])
@@ -212,32 +217,26 @@ def comment():
             status=200,
             mimetype='application/json'
         )
-        flash("Comment Successfully Added")
         return response
 
 
-"""
-@app.route("/delete_comment/<current_comments>")
-def delete_comment(current_comments):
-    Array = mongo.db.films.comments
-    mongo.db.films.remove({"comments": current_comments(Array)})
+@app.route("/delete_film_comment/<film_id>/<comment>")
+def delete_film_comment(film_id, comment):
+    film = mongo.db.films.find_one({"_id": ObjectId(film_id)})
+    current_comments = film['comments']
+    updated_comments = list(filter(lambda x: x['text'] != comment, current_comments))  # noqa: disable=line-too-long
+    update = {
+        "title": film.get("title"),
+        "genre": film.get("genre"),
+        "year": film.get("year"),
+        "wiki": film.get("wiki"),
+        "created_by": film.get("created_by"),
+        "cover": film.get("cover"),
+        "comments": updated_comments
+    }
+    mongo.db.films.update({"_id": ObjectId(film_id)}, update)
     flash("Comment Successfully Deleted")
-    return redirect(url_for("get_films"))
-"""
-
-# Error Handling of 404 & 500
-
-
-@app.errorhandler(404)
-def page_error(error):
-    """Custom 404 error page displayed when captured"""
-    return render_template("404.html"), 404
-
-
-@app.errorhandler(500)
-def error_500(error):
-    """Custom 500 error page displayed when captured"""
-    return render_template("500.html"), 500
+    return redirect(request.referrer)
 
 
 if __name__ == "__main__":

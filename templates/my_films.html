@@ -75,7 +75,7 @@
                         <p class="comment_author">{{ comment.author }}</p>
                         <p class="comment_text">{{ comment.text }}</p>
                         {% if session.user|lower == comment.author|lower %}
-                        <a href="{{ url_for('delete_film', film_id=film._id) }}" class="btn-small red darken-1 col s4 remove_comment right" onclick="return confirm('Remove this comment?')">
+                        <a href="{{ url_for('delete_film_comment', film_id=film._id , comment=comment.text) }}" class="btn-small red darken-1 col s4 remove_comment right" onclick="return confirm('Remove this comment?')">
                             <h6 class="remove_comment_text ">Remove</h6>
                         </a>
                         {% endif %}
