@@ -13,6 +13,11 @@ Users can access the "My Films" page to see only their own film collection, or a
 
 To see the app in action just click this [link](http://my-first-heroku-for-movies.herokuapp.com/).
 
+#### For testing, the following credentials can be used:
+
+  - Username: testfilms  
+  - Password: testingfilms 
+
 
 ## User Experience (UX)
 
