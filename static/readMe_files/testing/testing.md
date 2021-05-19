@@ -27,7 +27,7 @@
         
     3. As a First Time Visitor, I want to easily be able to add new films.
         1. Once the visitor access the site with a new profile, the user can easily find the link "Add Film" in the navigation bar and start to compose his collection.
-        2. On the "Add Film" page, after the form response is submitted, the page refreshes and the user is brought to his collection/home page and a flash message on the top of the page is displayed and saying: "Film Successfully Added".
+        2. On the "Add Film" page, after the form response is submitted, the page refreshes and the user is brought to his collection and a flash message on the top of the page is displayed and saying: "Film Successfully Added".
         
 ![add](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/03_add_film.png?raw=true)
 ![added](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/04_added_film.png?raw=true)
@@ -37,7 +37,7 @@
 
     1. As a Returning Visitor, I want to have easy and fast access to the film's informations.
 
-        1. Once the visitor is logged in, he can see the films contained in cards reveal, a kind of card that has informations on the front and back side. The back side of the card is accessible by clicking on the image on the front side.
+        1. Once the visitor is logged in, he can see the films contained in cards reveal, a kind of card that hold informations on the front and back side. The back side of the card is accessible by clicking on the image on the front side.
         2. The card displays all the details that the user needs to know and a comment/feedback section.
                 
          
@@ -56,10 +56,10 @@
         
 
     3. As a Returning Visitor, I want to easily be able to update or cancel an exsisting record.
-        1. In the collection pages, only the films added by the user displays 2 buttons: edit and delete. 
+        1. In the collection pages, only the films added by the user displays the edit and delete buttons. 
         2. The edit button direct the user to the "Edit Film" page. Here the user has the opportunity to update the informations contained in the record.
         3. After the form response is submitted, the page refreshes and the user is brought to his collection and a flash message on the top of the page is displayed and saying: "Film Successfully Updated".
-        4. The delete button gives the user the opportunity to delete a film. When the user click on the button, a message appears on the screen saying:"Are you sure to delete this film?"
+        4. The delete button gives the user the opportunity to delete a film. When the user click on the button, a confirmation message appears on the screen saying:"Are you sure to delete this film?"
         If the user click "Yes", a flash message on the top of the page is displayed and saying: "Film Successfully Deleted". 
         
         ![update](https://raw.githubusercontent.com/OmarBedawi/myMovies/master/static/readMe_files/testing/testing_screenshots/07_update.png?raw=true)
