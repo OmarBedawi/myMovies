@@ -87,6 +87,12 @@ The wireframes information can be found [here](static/readMe_files/wireframes/wi
 * #### Delete Film
     * This offers the possibility for users to delete films from their collection.
 
+* #### Add Comment
+    * This offers the possibility for users to add comments to the films they have already watched.
+
+* #### Remove Comment
+    * This offers the possibility for users to remove comments that they have posted in the past.
+
 * #### Flash Messages 
     * Throughout the site, flash messages are used to give the user feedback, such as 
     when a user logs in, logs out, adds, edit or delete a film.
