@@ -7,7 +7,7 @@
 ## Introduction
 This is the source code of the "Film's Archive" Application. 
 
-"Film's Archive" is the ideal app to allow many users to share their own film collection between each other.
+"Film's Archive" is the ideal app to allow many users (small group of friends or a family) to share their own film collection between each other.
 
 Users can access the "My Films" page to see only their own film collection, or access the "All Films" page and have a view of the film collection of all the users registered on the app.
 
@@ -17,6 +17,11 @@ To see the app in action just click this [link](http://my-first-heroku-for-movie
 
   - Username: testfilms  
   - Password: testingfilms 
+
+I have already added some films to "testfilms" profile.
+
+I have also created some other profiles. Like that is possible to see how the application looks when is shared between many users.
+Some films are added on porpose without cover picture or wikipedia link to show how the card appears in case these elements are missed.
 
 
 ## User Experience (UX)
@@ -47,7 +52,7 @@ To see the app in action just click this [link](http://my-first-heroku-for-movie
         -   The two main colours used are blue, and light grey.
     
     -   #### Imagery
-        -   Imagery is important. The background image with all the film covers is designed to be striking and catch the user's attention and let him understand what is the topic of the website. 
+        -   Imagery is important. The background image and all the film covers are designed to be striking and catch the user's attention and let him understand what is the topic of the website. 
 
 
 *   ### Wireframes
@@ -58,20 +63,20 @@ The wireframes information can be found [here](static/readMe_files/wireframes/wi
 ## Features
 ### Existing Features
 * #### Dynamic Search Bar 
-    * Films can be searched or filtered by title using the search bar.
+    * Films can be searched or filtered by title, using the search bar.
     * Users need to type at least one word contained in the film's title.
     * Number of results for searches is dynamically displayed on top of the page, just before the list of films.
 
 * #### Cards Reveal
     * Each film is contained in a reveal card, that is a card with front and back side.
-    * The front side shows a cover picture of the film followed by the title, the year and a link to direct the user to the wikipedia page of the film.
+    * The front side shows a cover picture of the film (if the image is not uploaded by the user, the app will automatically load a "noimage" file), followed by the title, the year of release and a link to direct the user to the wikipedia page of the film.
     * The title can occupy only one line. If it is longer it will be truncate. If the wikipedia link is not added a short paragraph will say "Link Not Added".
     * At the bottom of the card, if the film has been added by the user, the "edit" and "delete" buttons are displayed. If the film is added by another user, it will show the username of the user who added the film.
     * The back side of the card is accessable by clicking on the image on the front side.
     * The back side displays the full extended film's title and a comment section, where all the users can leave comment and feedback about the films.
 
 * #### User Profile
-    * User have to create a profile with username and password, in order to be able to access the application.
+    * User have to create a profile with username and password, in order to be able to access and use the application.
 
 * #### Add Film
     * This offers the possibility for users to add new films to their collection.
@@ -81,6 +86,12 @@ The wireframes information can be found [here](static/readMe_files/wireframes/wi
 
 * #### Delete Film
     * This offers the possibility for users to delete films from their collection.
+
+* #### Add Comment
+    * This offers the possibility for users to add comments to the films they have already watched.
+
+* #### Remove Comment
+    * This offers the possibility for users to remove comments that they have posted in the past.
 
 * #### Flash Messages 
     * Throughout the site, flash messages are used to give the user feedback, such as 
@@ -143,6 +154,7 @@ This project makes use of:
 * [W3 Html validator](https://validator.w3.org/) - Used to test and validate my html code.
 * [W3 Css validator](https://jigsaw.w3.org/) - Used to test and validate my css code.
 * [JSHint](https://jshint.com/) - Used to validate my Javascript code.
+* [PEP8 Online](http://pep8online.com/) - Used to validate my Python code.
 * [Color Scheme Designer](http://colorschemedesigner.com/) - Used to test colour combinations.
 * [Free Formatter](https://www.freeformatter.com/) - Used to format my html, css and javascript code.
 * [Python Formatter](https://codebeautify.org/python-formatter-beautifier) - Used to format my python files
@@ -160,20 +172,28 @@ Testing information can be found [here](static/readMe_files/testing/testing.md).
 
 ## Code Validation
 * I used the [W3 Html validator](https://validator.w3.org/) service to validate my Html code.
+  * All html files passes succesfully through the 'check by address' validator.
+  * The "my_film.html" file has been validate by the source code of the page (navigate to "My Films" page, right click with the mouse, and then click 'view page source'. Copy the code and then paste it in the validator).
 
 * I used the [W3 Css validator](https://jigsaw.w3.org/) service to validate my Css code.
+  * No errors found
 
 * I used the [JSHint](https://jshint.com/) service to validate my JavaScript code.
+  * No errors found
+
+* I used the [PEP8 Online](http://pep8online.com/) service to validate my Python code.
+  * No errors found
 
 
 ### Known Bugs
 
--   The console is displaying an Error 404 (favicon.ico:1) but after a deep research I can't understand what the error is about. However, this error is not interfering with the functionality of the code.
--   When the comments are added, the css properties are not loaded until the page is not refreshed.
--   Some features are misplaced on smaller devices.
--   The cover image has to be big size (at least a width of 700px) otherwise will look pixaleted.
--   The cover image is a link image. Could happen that for some reason the link in not available anymore and need to be update.
-
+* The console is displaying an Error 404 (favicon.ico:1) but after differet tentatives I can't understand how to get rid of it. However, this error is not interfering with the functionality of the code.
+* The cover image has to be big size (at least a width of 700px) otherwise will look pixaleted.
+* The cover image is a link image. Could happen that for some reason the link in not available anymore and need to be update.
+* When the comments are added, the css properties are not loaded until the page is not refreshed.
+  * I solved this adding the comment classes in the script.js file
+* Some features are misplaced on smaller devices.
+  * I solved this resizing the misplaced elements on smaller screens
 
 
 ## Deployment
@@ -265,7 +285,9 @@ ERD - Entity Relational Diagram
 
 6. These files were added, commited and pushed to github using the commands `git add`  `git commit`  `git push` .
 
-**Heroku Deployment**: The Project's source file was also pushed to [Heroku](https://heroku.com/) via the `heroku master` branch. To deploy this app to a Heroku app use the following steps:
+### Heroku Deployment
+
+The Project's source file was also pushed to [Heroku](https://heroku.com/) via the `heroku master` branch. To deploy this app to a Heroku app use the following steps:
 
 1. A `requirements.txt` file was created using the terminal command `pip3 freeze > requirements.txt`.
 
